@@ -21,12 +21,39 @@
       "name": "memory-compression-benchmark-design",
       "status": "completed",
       "summary": "Designed the M1 benchmark around seeded corpus strata, exact-token metrics, downstream task utility, redaction safety, external baselines, and failure-mode taxonomy."
+    },
+    {
+      "id": "D004",
+      "ts": "2026-06-30T13:37:15Z",
+      "name": "exact-tokenizer-provider-count-integration",
+      "status": "completed",
+      "summary": "Completed M2 tokenizer plan: pluggable TokenCounter oracle, OpenAI-family local adapters, Anthropic/Gemini provider count fallbacks, OpenAI usage reconciliation, normalized confidence/provenance schema, and golden-vector drift checks."
+    },
+    {
+      "id": "D005",
+      "ts": "2026-06-30T15:42:40Z",
+      "name": "auditable-memoryframe-dsl-design",
+      "status": "completed",
+      "summary": "Completed M3 compression-language design: MemoryFrame v0.1 line grammar, fixed ASCII/codebook alias strategy, source-span/confidence audit model, rehydration algorithm, M5 file targets, and safety boundary that keeps opaque conlang/glyph surfaces evaluation-only."
+    },
+    {
+      "id": "D006",
+      "ts": "2026-06-30T17:53:06Z",
+      "name": "memory-provider-baseline-comparison",
+      "status": "completed",
+      "summary": "Completed M4 provider matrix: local Holographic/SQLite baseline, Hindsight graph observations, Mem0/Supermemory semantic providers, OpenViking/ByteRover hierarchy providers, Honcho profile memory, and opt-in safety gates."
+    },
+    {
+      "id": "D007",
+      "ts": "2026-06-30T18:40:17Z",
+      "name": "no-network-prototype-implementation-plan",
+      "status": "completed",
+      "summary": "Completed M5 prototype plan: P0 no-network TokenCounter, MemoryFrame parser/emitter/audit/rehydrator, local JSONL provider baseline, seeded S1/S2/S4 runner, graders, scorecard, and acceptance tests."
     }
   ],
   "next_direction_candidates": [
-    "Exact tokenizer integration and provider token-count validation",
-    "Controlled language / DSL / codebook design for auditable memory compression",
-    "Memory provider comparison across local-first, graph, semantic, and cloud substrates",
-    "MCP/plugin API design after prototype metrics stabilize"
+    "Controlled evaluation pilot for MemoryFrame vs raw/summary/retrieval baselines",
+    "MCP/plugin API design after prototype metrics stabilize",
+    "Privacy/redaction hardening with planted canary fixtures"
   ]
 }

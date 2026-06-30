@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-30T15:41:06.110Z",
+  "method": "TokenCompressor.estimateTokens(profile=gpt); heuristic only, not publishable exact count",
+  "purpose": "Local sanity probe for M3 DSL design: compare a verbose memory paragraph, compact JSON, and an auditable line DSL. Counts are estimates and used only to choose design direction, not as publishable compression ratios.",
+  "rows": [
+    {
+      "name": "raw",
+      "chars": 712,
+      "estimated_tokens_gpt": 205,
+      "semantic_units": 74.6,
+      "density": 0.3639
+    },
+    {
+      "name": "json",
+      "chars": 360,
+      "estimated_tokens_gpt": 97,
+      "semantic_units": 11.3,
+      "density": 0.1165
+    },
+    {
+      "name": "dsl",
+      "chars": 461,
+      "estimated_tokens_gpt": 133,
+      "semantic_units": 26.1,
+      "density": 0.1962
+    }
+  ],
+  "interpretation": "Compact JSON is shortest but loses readability/source typing; the line DSL costs more estimated tokens than JSON while retaining fact/source/action structure. M3 therefore recommends a typed auditable DSL plus optional binary/JSON export, not a purely opaque conlang surface."
+}

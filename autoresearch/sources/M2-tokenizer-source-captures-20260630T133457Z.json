@@ -1,0 +1,65 @@
+[
+  {
+    "id": "M2-S001",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "terminal urllib raw fetch",
+    "status": 200,
+    "url": "https://raw.githubusercontent.com/openai/tiktoken/main/README.md",
+    "title": "openai/tiktoken README",
+    "snippet": "tiktoken is a fast BPE tokeniser for use with OpenAI's models. Example usage: enc = tiktoken.get_encoding(\"o200k_base\"); enc = tiktoken.encoding_for_model(\"gpt-4o\"). The open source version can be installed from PyPI with pip install tiktoken."
+  },
+  {
+    "id": "M2-S002",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "terminal npm registry fetch",
+    "status": 200,
+    "url": "https://registry.npmjs.org/gpt-tokenizer/latest",
+    "title": "npm registry: gpt-tokenizer latest",
+    "snippet": "version 3.4.0; description: A pure JavaScript implementation of a BPE tokenizer (Encoder/Decoder) for GPT-2 / GPT-3 / GPT-4 and other OpenAI models; keywords include GPT-4o and OpenAI."
+  },
+  {
+    "id": "M2-S003",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "terminal npm registry fetch",
+    "status": 200,
+    "url": "https://registry.npmjs.org/%40dqbd%2Ftiktoken/latest",
+    "title": "npm registry: @dqbd/tiktoken latest",
+    "snippet": "version 1.0.22; description: JS/WASM bindings for tiktoken; exports include node/default WASM and lite entrypoints."
+  },
+  {
+    "id": "M2-S004",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "terminal urllib HTML fetch",
+    "status": 200,
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/token-counting",
+    "title": "Anthropic Claude Platform Docs — Token counting",
+    "snippet": "All active models support token counting. Example SDK call: client.messages.count_tokens(model=\"claude-opus-4-8\", system=..., messages=[...]) returns {\"input_tokens\":14}. The page notes counts may include tokens added automatically by Anthropic for system optimizations and that billing reflects only user content."
+  },
+  {
+    "id": "M2-S005",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "browser_navigate + DOM innerText",
+    "status": "browser_verified",
+    "url": "https://ai.google.dev/gemini-api/docs/tokens",
+    "title": "Google AI for Developers — Understand and count tokens",
+    "snippet": "Gemini models process input and output as tokens; for Gemini, a token is about 4 characters. The page says to call count_tokens with the input request before sending and to use response usage for total_input_tokens, total_output_tokens, total_thought_tokens, total_cached_tokens, total_tool_use_tokens, and total_tokens."
+  },
+  {
+    "id": "M2-S006",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "terminal urllib HTML fetch",
+    "status": 200,
+    "url": "https://docs.mistral.ai/guides/tokenization/",
+    "title": "Mistral Docs — Concept Deep Dive: Tokenization",
+    "snippet": "Mistral's tokenization guide says to refer to mistral-common for the tokenizer implementation; it identifies tokenizer versions V1, V2, V3, and V3-Tekken, with V3-Tekken based on tiktoken while other versions are based on sentencepiece."
+  },
+  {
+    "id": "M2-S007",
+    "captured_at": "2026-06-30T13:34:57Z",
+    "method": "terminal urllib HTML fetch",
+    "status": 200,
+    "url": "https://platform.openai.com/docs/guides/prompt-caching",
+    "title": "OpenAI API Docs — Prompt caching",
+    "snippet": "OpenAI usage examples include prompt_tokens, completion_tokens, total_tokens, and prompt_tokens_details.cached_tokens. The page states cached_tokens can be monitored via the usage field results or Usage dashboard."
+  }
+]

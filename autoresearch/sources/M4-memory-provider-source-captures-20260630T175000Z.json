@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-06-30T17:50:00Z",
+  "milestone": "M4",
+  "note": "web_search/web_extract were unavailable in this cron environment; browser navigation and local plugin files were used for primary-source verification. No secrets, .env files, or credential stores were read.",
+  "captures": [
+    {
+      "id": "M4-S001",
+      "type": "local_plugin_inventory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/honcho/plugin.yaml:1-7",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/hindsight/plugin.yaml:1-8",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/mem0/plugin.yaml:1-5",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/openviking/plugin.yaml:1-8",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/holographic/plugin.yaml:1-5",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/byterover/plugin.yaml:1-9",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/supermemory/plugin.yaml:1-5",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/retaindb/plugin.yaml:1-7"
+      ],
+      "summary": "The local Hermes memory plugin inventory exposes eight candidate substrates spanning user-model memory, knowledge graph/observations, server-side semantic extraction, context databases, local SQLite/FTS, tree memory, and cloud hybrid search."
+    },
+    {
+      "id": "M4-S002",
+      "type": "local_first_sqlite",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/holographic/README.md:1-37",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/holographic/store.py:16-49",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/holographic/retrieval.py:22-64"
+      ],
+      "summary": "Holographic is a local SQLite fact store with FTS5, trust scoring, entity links, optional HRR vectors, and explicit add/search/probe/related/reason/update/remove/list tools."
+    },
+    {
+      "id": "M4-S003",
+      "type": "graph_observation_memory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/hindsight/README.md:1-9",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/hindsight/README.md:81-87",
+        "https://hindsight.vectorize.io/developer/observations"
+      ],
+      "browser_title": "Observations: Knowledge Consolidation | Hindsight",
+      "excerpt": "Hindsight observations are deduplicated, evidence-grounded beliefs built from multiple retained facts; each observation tracks supporting evidence with quotes and a proof count, evolves as evidence changes, and can be used in recall/reflect alongside raw facts."
+    },
+    {
+      "id": "M4-S004",
+      "type": "semantic_platform_and_oss_memory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/mem0/README.md:1-9",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/mem0/README.md:22-36",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/mem0/__init__.py:1-25",
+        "https://docs.mem0.ai/llms.txt"
+      ],
+      "excerpt": "Mem0 describes itself as a memory layer for LLM agents with Platform (managed) and Open Source (self-hosted) products. The local plugin supports platform and OSS modes, semantic search, reranking, and explicit list/search/add/update/delete tools."
+    },
+    {
+      "id": "M4-S005",
+      "type": "context_database_and_tree_memory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/openviking/README.md:1-9",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/openviking/README.md:43-52",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/openviking/__init__.py:18-24",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/byterover/README.md:1-11",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/byterover/README.md:27-41"
+      ],
+      "summary": "OpenViking is a context database with filesystem-style viking:// URIs, tiered retrieval, resource ingestion, and automatic extraction. ByteRover is a local-first hierarchical knowledge tree accessed through brv query/curate/status, with optional cloud sync."
+    },
+    {
+      "id": "M4-S006",
+      "type": "profile_context_memory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/honcho/README.md:35-53",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/honcho/README.md:102-114",
+        "https://honcho.dev/docs/v3/guides/integrations/hermes"
+      ],
+      "browser_title": "Hermes Agent + Honcho - Honcho",
+      "excerpt": "Honcho gives Hermes prompt-time context injection, cross-session continuity, durable writeback, user and AI peer representations, and tools for profile, search, context/reasoning, and durable conclusions."
+    },
+    {
+      "id": "M4-S007",
+      "type": "semantic_profile_rag_memory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/supermemory/README.md:1-8",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/supermemory/README.md:23-37",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/supermemory/README.md:46-74",
+        "https://supermemory.ai/docs/intro"
+      ],
+      "browser_title": "Overview — What is Supermemory? - supermemory | Memory API for the AI era",
+      "excerpt": "Supermemory positions itself as long-term/short-term memory and context infrastructure for agents, building a semantic understanding graph over text/files/chats and serving learned user context, user profiles, and advanced semantic RAG."
+    },
+    {
+      "id": "M4-S008",
+      "type": "cloud_hybrid_memory",
+      "sources": [
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/retaindb/README.md:1-8",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/retaindb/README.md:22-40",
+        "/Users/filipdam/.hermes/hermes-agent/plugins/memory/retaindb/plugin.yaml:1-7"
+      ],
+      "summary": "RetainDB is a cloud memory API with hybrid vector/BM25/reranking search and seven memory types, but the plugin requires RETAINDB_API_KEY and should therefore remain an opt-in remote comparison."
+    }
+  ]
+}
