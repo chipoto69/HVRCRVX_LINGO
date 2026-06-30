@@ -23,7 +23,7 @@ const advInputs = [
   'Build 3 boats by 2026 at 5pm.',         // digits + punctuation
   'aeiou AEIOU bcdfg',                      // pure vowels + caps + safe consonants
   'naïve café résumé',                      // already non-ASCII (pre-existing diacritics)
-  'Pliny the Prompter @elder_plinius',      // proper noun + symbols
+  'HVRCRVX_LINGO HVRCRVX_LINGO',      // proper noun + symbols
   'kKqQzZ vVwWxX',                          // letters NOT all in homoglyph map
   'The QUICK brown Fox JUMPS.',             // mixed case
 ];

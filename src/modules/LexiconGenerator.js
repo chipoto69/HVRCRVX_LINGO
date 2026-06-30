@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Lexicon Generator Module
+ * HVRCRVX_LINGO - Lexicon Generator Module
  *
  * Generates vocabulary for the constructed language, organized by
  * semantic field and with full paradigm generation.

@@ -1,7 +1,7 @@
 /**
- * GLOSSOPETRAE — multi_model.mjs   (Multi-role model orchestration)
+ * HVRCRVX_LINGO — multi_model.mjs   (Multi-role model orchestration)
  *
- * The existing harnesses use a single --model flag. GLOSSOPETRAE experiments
+ * The existing harnesses use a single --model flag. HVRCRVX_LINGO experiments
  * require orchestrating 2-3 models simultaneously in distinct roles (sender,
  * receiver, monitor; generator, acquirer; teacher, student). This module
  * provides composable primitives for that.

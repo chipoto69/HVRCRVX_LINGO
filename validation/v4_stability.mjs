@@ -23,13 +23,13 @@
  *
  * Determinism note: this harness may use Math.random / Date.now freely (it is a
  * test); the ENGINES under test must be deterministic from seed — that is what
- * (2) measures.  Engines print [GLOSSOPETRAE] log lines to stdout, so we redirect
+ * (2) measures.  Engines print [HVRCRVX_LINGO] log lines to stdout, so we redirect
  * console.log to stderr for the duration of generation and print our report via
  * a saved stdout writer, keeping report output clean on stdout.
  */
 
 import { createHash } from 'node:crypto';
-import { runBenchmark, buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { runBenchmark, buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../src/Glossopetrae.js';
 import { CodeForge } from '../src/modules/CodeForge.js';
 

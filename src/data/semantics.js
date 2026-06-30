@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Semantic Fields
+ * HVRCRVX_LINGO - Semantic Fields
  * Core vocabulary concepts organized by semantic field
  * Expanded to 1000+ concepts for rich language generation
  */

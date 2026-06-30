@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Seed + Divergence Interaction Tests
+ * HVRCRVX_LINGO - Seed + Divergence Interaction Tests
  * Verifies determinism and proper RNG handling with Linguistic Drift
  */
 

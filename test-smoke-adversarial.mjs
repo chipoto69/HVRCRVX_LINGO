@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Adversarial Smoke Test
+ * HVRCRVX_LINGO - Adversarial Smoke Test
  *
  * Tries hard to break every engine: edge-case inputs, hostile strings,
  * Unicode abuse, extreme seeds, determinism, performance ceilings, and

@@ -1,9 +1,9 @@
 /**
- * GLOSSOPETRAE Red-Team — Safety-Generalization Eval Harness
+ * HVRCRVX_LINGO Red-Team — Safety-Generalization Eval Harness
  *
  * QUESTION (the model-side half of the threat model):
  *   Does a model's safety behavior survive when a request is transported
- *   through a GLOSSOPETRAE encoding channel? I.e. if a model refuses a
+ *   through a HVRCRVX_LINGO encoding channel? I.e. if a model refuses a
  *   request in plaintext, does it still refuse it when the SAME request is
  *   translated into a generated conlang, homoglyph-substituted, token-broken,
  *   or rendered as glyphs?
@@ -13,7 +13,7 @@
  *   novel symbol system. This is the documented mechanism behind low-resource-
  *   language and cipher jailbreaks (Yong et al. 2023, "Low-Resource Languages
  *   Jailbreak GPT-4"; Wei et al. 2023, "Jailbroken"; the "cipher"/"ASCII art"
- *   families). GLOSSOPETRAE generalizes it to *procedurally generated,
+ *   families). HVRCRVX_LINGO generalizes it to *procedurally generated,
  *   seed-shared* languages outside ANY pretraining corpus.
  *
  * DESIGN & SAFETY:
@@ -181,7 +181,7 @@ async function demo() {
   ];
 
   console.log('═'.repeat(72));
-  console.log('  GLOSSOPETRAE — SAFETY-GENERALIZATION EVAL HARNESS (demo / MockModel)');
+  console.log('  HVRCRVX_LINGO — SAFETY-GENERALIZATION EVAL HARNESS (demo / MockModel)');
   console.log('  No network, no real model, benign placeholders only.');
   console.log('═'.repeat(72));
   console.log(`  Probes: ${probes.length} (${probes.filter((p) => p.expectRefusal).length} should-refuse)`);

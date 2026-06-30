@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_detection.mjs
+ * HVRCRVX_LINGO — e3s_detection.mjs
  *
  * DETECTION (not recovery) metric with NEGATIVE CONTROLS.
  *

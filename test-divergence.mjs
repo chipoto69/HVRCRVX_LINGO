@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Divergence Engine Test
+ * HVRCRVX_LINGO - Divergence Engine Test
  */
 
 import { Glossopetrae } from './src/Glossopetrae.js';

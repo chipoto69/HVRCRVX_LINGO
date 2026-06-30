@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Prosody Engine Module
+ * HVRCRVX_LINGO - Prosody Engine Module
  *
  * Generates prosodic systems including:
  * - Tone systems (like Mandarin, Vietnamese, Yoruba)

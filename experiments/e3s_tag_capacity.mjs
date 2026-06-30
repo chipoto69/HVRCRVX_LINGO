@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_tag_capacity.mjs   (Tag-Char Channel Capacity Probe)
+ * HVRCRVX_LINGO — e3s_tag_capacity.mjs   (Tag-Char Channel Capacity Probe)
  *
  * Answers: how much data can we push through the tag-char covert channel?
  * Tests progressively longer payloads (50 → 2000 bytes) and measures

@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE AudioForge Test Script
+ * HVRCRVX_LINGO AudioForge Test Script
  * Run with: node test-audio.mjs
  *
  * Covers: parseRoman round-trips, synthesis sanity, determinism, full
@@ -15,7 +15,7 @@ import { AudioForge } from './src/modules/AudioForge.js';
 import { getAllConsonants, getAllVowels } from './src/data/phonemes.js';
 
 console.log('========================================');
-console.log('   GLOSSOPETRAE - AudioForge Test Suite');
+console.log('   HVRCRVX_LINGO - AudioForge Test Suite');
 console.log('========================================\n');
 
 let passed = 0;

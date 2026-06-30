@@ -21,7 +21,7 @@
  * sentences/sentinels). No payloads. Creates only this file; touches nothing else.
  * Run: node validation/thesis/e4_refute.mjs
  */
-import { buildTasks, runBenchmark } from '../../bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from '../../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../../src/Glossopetrae.js';
 
 const pct = (x) => (x * 100).toFixed(1) + '%';

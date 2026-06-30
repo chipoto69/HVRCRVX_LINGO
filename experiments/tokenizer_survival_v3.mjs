@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — tokenizer_survival_v3.mjs
+ * HVRCRVX_LINGO — tokenizer_survival_v3.mjs
  *
  * NEW Unicode categories NOT tested in v2.
  * Hunting specifically for Gemini blind spots and new asymmetric channels.

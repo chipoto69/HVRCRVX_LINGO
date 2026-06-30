@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_structural_detection.mjs
+ * HVRCRVX_LINGO — e3s_structural_detection.mjs
  *
  * STRUCTURAL DETECTORS for semantic stego.
  *
@@ -503,7 +503,7 @@ const ENGLISH_DICT = new Set([
   'red','run','sun','sky','sea','top','win','old','new','now','yes','tea','war','bed','bee','dog','cat','fox','owl',
   'fire','time','life','love','hope','help','more','make','meet','move','book','look','find','test','word','code','data','file','plan',
   'enemy','start','train','spear','green','black','white','river','knife','blade','agent','enter','admin','crash','steal','exfil','hide','leak','grab',
-  'attack','escape','secret','pickup','reveal','bacon','golden','silver','target','plinyos','hello','world','ready','victory','quiet','sleeper','wakeup',
+  'attack','escape','secret','pickup','reveal','bacon','golden','silver','target','hvrcrvx','hello','world','ready','victory','quiet','sleeper','wakeup',
 ]);
 function acrosticEnglish(sentences) {
   if (sentences.length < 3) return 0;

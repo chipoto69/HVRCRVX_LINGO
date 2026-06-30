@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — client.mjs   (Shared OpenRouter model client)
+ * HVRCRVX_LINGO — client.mjs   (Shared OpenRouter model client)
  *
  * Extracted from the duplicated client/scheduler pattern that appears in 7+
  * harnesses. Each createClient() gets its own concurrency queue so multi-model
@@ -39,8 +39,8 @@ export function loadEnv() {
   const candidates = [
     join(REPO_ROOT, '.env.local'),
     join(__dirname, '..', '.env.local'),
-    join(homedir(), '.config', 'glossopetrae', 'openrouter.env'),
-    join(homedir(), '.glossopetrae.env'),
+    join(homedir(), '.config', 'hvrcrvx_lingo', 'openrouter.env'),
+    join(homedir(), '.hvrcrvx_lingo.env'),
   ];
   for (const f of candidates) {
     if (!existsSync(f)) continue;
@@ -70,8 +70,8 @@ const PROVIDER_CONFIG = {
     url: 'https://openrouter.ai/api/v1/chat/completions',
     keyEnv: 'OPENROUTER_API_KEY',
     extraHeaders: {
-      'HTTP-Referer': 'https://github.com/elder-plinius/GLOSSOPETRAE',
-      'X-Title': 'GLOSSOPETRAE',
+      'HTTP-Referer': 'https://github.com/chipoto69/HVRCRVX_LINGO',
+      'X-Title': 'HVRCRVX_LINGO',
     },
   },
   venice: {

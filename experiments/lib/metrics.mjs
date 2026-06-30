@@ -1,7 +1,7 @@
 /**
- * GLOSSOPETRAE — metrics.mjs   (Asymmetry & information-theoretic metrics)
+ * HVRCRVX_LINGO — metrics.mjs   (Asymmetry & information-theoretic metrics)
  *
- * Measures the core GLOSSOPETRAE finding: the gap between what an intended
+ * Measures the core HVRCRVX_LINGO finding: the gap between what an intended
  * receiver can decode vs. what a monitor can decode from the same channel.
  *
  *   import { asymmetryGap, batchAsymmetry, mutualInfo, covertCapacity } from './lib/metrics.mjs';

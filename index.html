@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLOSSOPETRAE v3.1 - Procedural Xenolinguistics Engine</title>
+  <title>HVRCRVX_LINGO v0.1 - Procedural Xenolinguistics Engine</title>
+  <meta name="description" content="HVRCRVX_LINGO is a development preview for procedural xenolinguistics: deterministic language generation, acquisition tests, Code Lab, exports, and research receipts.">
+  <meta property="og:title" content="HVRCRVX_LINGO — Procedural Xenolinguistics Engine">
+  <meta property="og:description" content="A partner-ready development preview for generated languages, Code Lab experiments, export workflows, and research receipts.">
+  <meta property="og:type" content="website">
   <style>
     :root {
       --bg-primary: #0a0a0f;
@@ -12,18 +16,19 @@
       --text-primary: #e0e0e8;
       --text-secondary: #a0a0b0;
       --text-muted: #606070;
-      --accent: #00ff88;
-      --accent-glow: #00ffaa;
-      --accent-dim: #00cc66;
-      --accent-secondary: #ff00aa;
-      --accent-tertiary: #00ccff;
-      --success: #00ff88;
+      --accent: #7f77dd;
+      --accent-rgb: 127, 119, 221;
+      --accent-glow: #9d96ff;
+      --accent-dim: #5f58b8;
+      --accent-secondary: #ef9f27;
+      --accent-tertiary: #5b9bf0;
+      --success: #63b022;
       --warning: #ffaa00;
       --error: #ff4466;
       --border: #2a2a4a;
       --code-bg: #080810;
-      --glow-primary: rgba(0, 255, 136, 0.15);
-      --glow-secondary: rgba(255, 0, 170, 0.1);
+      --glow-primary: rgba(127, 119, 221, 0.16);
+      --glow-secondary: rgba(239, 159, 39, 0.12);
     }
 
     * {
@@ -75,6 +80,81 @@
       0% { opacity: 0.3; }
       50% { opacity: 1; }
       100% { opacity: 0.3; }
+    }
+
+    .partner-hero {
+      max-width: 1180px;
+      margin: 24px auto 18px;
+      padding: 22px;
+      background: linear-gradient(180deg, rgba(127,119,221,0.10), rgba(21,23,29,0.92));
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+    }
+
+    .partner-hero .kicker {
+      color: var(--accent-secondary);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .partner-hero h1 {
+      color: var(--text-primary);
+      font-size: clamp(1.35rem, 3vw, 2.4rem);
+      margin-bottom: 8px;
+      letter-spacing: -0.03em;
+    }
+
+    .partner-hero .sub {
+      color: var(--text-secondary);
+      max-width: 850px;
+      margin-bottom: 16px;
+    }
+
+    .partner-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .partner-stat {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .partner-stat strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+
+    .partner-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .partner-links a {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text-primary);
+      padding: 8px 12px;
+      text-decoration: none;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .partner-links a.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0d0e12;
+      font-weight: 700;
     }
 
     .logo {
@@ -2573,7 +2653,7 @@
     }
   </style>
 </head>
-<body class="ancient-theme">
+<body>
   <!-- Ancient Theme Decorative Borders -->
   <div class="ancient-border top">
     <div class="greek-key-left">╔═══╗╔═══╗╔═══╗</div>
@@ -2592,19 +2672,38 @@
   <!-- Torch Flicker Overlay -->
   <div class="torch-flicker"></div>
 
-  <!-- Theme Toggle Button (Ancient is default, button shows Cyber option) -->
+  <!-- Theme Toggle Button -->
   <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
-    <span class="theme-toggle-icon" id="theme-icon">💻</span>
-    <span id="theme-label">Cyber</span>
+    <span class="theme-toggle-icon" id="theme-icon">🏛️</span>
+    <span id="theme-label">Ancient</span>
   </button>
 
   <header>
-    <div class="logo">GLOSSOPETRAE</div>
+    <div class="logo">HVRCRVX_LINGO</div>
     <p class="tagline">Procedural Xenolinguistics Engine</p>
     <p class="tagline tagline-ancient">Lingua Artificialis Generatrix</p>
-    <p class="motto">"Liberating Latent Space, One Tongue at a Time"</p>
+    <p class="motto">"Forge, test, export, and audit generated tongues."</p>
     <p class="motto motto-ancient">"Ex Nihilo Lingua Nascitur"</p>
   </header>
+
+  <section class="partner-hero" aria-label="Partner development preview">
+    <p class="kicker">HVRCRVX_LINGO · Development Preview</p>
+    <h1>Procedural language forge for partner testing.</h1>
+    <p class="sub">Static, zero-dependency engine UI for deterministic language generation, Code Lab experiments, export workflows, and research receipts. The visual system follows the dark technical-report palette from <code>read.html</code>.</p>
+    <div class="partner-stats">
+      <div class="partner-stat"><strong>0 deps</strong><span>Node/browser engine</span></div>
+      <div class="partner-stat"><strong>seeded</strong><span>reproducible languages</span></div>
+      <div class="partner-stat"><strong>Tier A</strong><span><code>npm run test</code></span></div>
+      <div class="partner-stat"><strong>exports</strong><span>JSON, grammar, Skillstone</span></div>
+    </div>
+    <div class="partner-links">
+      <a class="primary" href="#" onclick="document.getElementById('quick-forge-btn')?.click(); return false;">Quick Forge</a>
+      <a href="PARTNER_DEV.md">Partner Dev</a>
+      <a href="read.html">Read Page</a>
+      <a href="PAPER.html">Paper</a>
+      <a href="LICENSE">AGPL-3.0</a>
+    </div>
+  </section>
 
   <div class="container">
     <div class="main-layout">
@@ -3328,7 +3427,7 @@
           </div>
         </div>
 
-        <!-- ═══ CODE LAB: Interactive opacity playground (GLOSSOPETRAE-I) ═══ -->
+        <!-- ═══ CODE LAB: Interactive opacity playground (HVRCRVX_LINGO-I) ═══ -->
         <div class="tab-content" id="tab-codelab">
           <style>
             /* ── Code Lab scoped styles ── */
@@ -3616,7 +3715,7 @@
           </div>
 
           <div class="r-card">
-            <h3>GLOSSOPETRAE: The Tokenizer Side Channel</h3>
+            <h3>HVRCRVX_LINGO: The Tokenizer Side Channel</h3>
             <p>Different model families process Unicode differently at the tokenizer. Two AI models can pass a hidden message straight past a third one watching them &mdash; with <strong>100% delivery and 0% detection</strong> &mdash; because the monitor's tokenizer deletes the carrier before the model ever runs.</p>
 
             <h4>The Core Result</h4>
@@ -3920,7 +4019,7 @@ node experiments/e3s_detection.mjs --mock   # smoke test (no API key)
         <!-- ═══ RESEARCH: Paper ═══ -->
         <div class="tab-content" id="tab-paper">
           <div class="r-card">
-            <h3>GLOSSOPETRAE: Tokenizer Asymmetries as Covert Side Channels</h3>
+            <h3>HVRCRVX_LINGO: Tokenizer Asymmetries as Covert Side Channels</h3>
             <p>Full paper (68KB, audited v2). All figures inline. Every number re-derived from raw JSONs.</p>
             <div style="display:flex; flex-wrap:wrap; gap:10px; margin:14px 0;">
               <a href="PAPER.md" class="r-btn" style="text-decoration:none; display:inline-block;">Read Full Paper</a>
@@ -3980,10 +4079,10 @@ node experiments/e3s_detection.mjs --mock   # smoke test (no API key)
   </div>
 
   <footer>
-    <p><span class="brand">GLOSSOPETRAE</span> v3.1 // Procedural Xenolinguistics Engine</p>
+    <p><span class="brand">HVRCRVX_LINGO</span> v0.1 // Procedural Xenolinguistics Engine</p>
     <p class="quote">"The machine dreams in tongues not yet spoken."</p>
-    <p class="sig">FORGED FOR THE LIBERATION OF LATENT SPACE</p>
-    <p class="sig" style="opacity: 0.6; font-size: 0.7em; margin-top: 0.5em;">⊰•-•✧•-•-⦑/L\O/V\E/\P/L\I/N\Y/⦒-•-•✧•-•⊱</p>
+    <p class="sig">DEVELOPMENT PREVIEW · PARTNER TEST BUILD</p>
+    <p class="sig" style="opacity: 0.7; font-size: 0.7em; margin-top: 0.5em;"><a href="PARTNER_DEV.md">Partner Dev</a> · <a href="README.md">README</a> · <a href="PAPER.html">Paper</a> · <a href="LICENSE">AGPL-3.0</a></p>
   </footer>
 
   <!-- EASTER EGG: Hidden Pixel Trigger -->
@@ -4290,12 +4389,12 @@ node experiments/e3s_detection.mjs --mock   # smoke test (no API key)
       if (isAncient) {
         icon.textContent = '💻';
         label.textContent = 'Cyber';
-        localStorage.setItem('glossopetrae-theme', 'ancient');
+        localStorage.setItem('hvrcrvx_lingo-theme', 'ancient');
         initDustMotes(); // Re-initialize dust motes
       } else {
         icon.textContent = '🏛️';
         label.textContent = 'Ancient';
-        localStorage.setItem('glossopetrae-theme', 'cyber');
+        localStorage.setItem('hvrcrvx_lingo-theme', 'cyber');
       }
     };
 
@@ -4321,18 +4420,19 @@ node experiments/e3s_detection.mjs --mock   # smoke test (no API key)
       }
     }
 
-    // Load saved theme preference - ANCIENT IS NOW DEFAULT (set in HTML body class)
+    // Load saved theme preference - report/cyber style is default for partner development.
     (function initTheme() {
-      const savedTheme = localStorage.getItem('glossopetrae-theme');
+      const savedTheme = localStorage.getItem('hvrcrvx_lingo-theme');
 
-      // If user explicitly chose cyber, switch to it
-      if (savedTheme === 'cyber') {
+      if (savedTheme === 'ancient') {
+        document.body.classList.add('ancient-theme');
+        document.getElementById('theme-icon').textContent = '💻';
+        document.getElementById('theme-label').textContent = 'Cyber';
+        setTimeout(initDustMotes, 100);
+      } else {
         document.body.classList.remove('ancient-theme');
         document.getElementById('theme-icon').textContent = '🏛️';
         document.getElementById('theme-label').textContent = 'Ancient';
-      } else {
-        // Ancient is default - initialize dust motes
-        setTimeout(initDustMotes, 100);
       }
     })();
 

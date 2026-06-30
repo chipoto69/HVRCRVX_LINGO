@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Dead Language Reviver Module
+ * HVRCRVX_LINGO - Dead Language Reviver Module
  *
  * Resurrects and mutates historical languages for conlang generation.
  * Includes authentic typological data from attested dead languages

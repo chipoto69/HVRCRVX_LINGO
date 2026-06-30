@@ -1,5 +1,5 @@
 /**
- * E5 — PSYCHOMETRICS: is GLOSSOPETRAE-BENCH a statistically SOUND measurement
+ * E5 — PSYCHOMETRICS: is HVRCRVX_LINGO-BENCH a statistically SOUND measurement
  * instrument?  We treat the benchmark as a *test* and run classical test-theory
  * (CTT) item analysis on a SIMULATED population of "models":
  *
@@ -33,7 +33,7 @@
  * Run:  node validation/thesis/e5_psychometrics.mjs
  */
 
-import { buildTasks, runBenchmark } from '../../bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from '../../bench/hvrcrvx-lingo-bench.mjs';
 
 // ---------------------------------------------------------------------------
 // Config
@@ -304,7 +304,7 @@ function abilityRecovery(rows) {
 // ---------------------------------------------------------------------------
 (async () => {
   console.log('='.repeat(72));
-  console.log('  E5 — PSYCHOMETRICS: GLOSSOPETRAE-BENCH as a measurement instrument');
+  console.log('  E5 — PSYCHOMETRICS: HVRCRVX_LINGO-BENCH as a measurement instrument');
   console.log('='.repeat(72));
   console.log(`  seeds: ${SEED_COUNT}   abilities: ${ABILITIES.join(', ')}   replicas/level: ${REPLICAS}`);
   const totalModels = ABILITIES.length * REPLICAS;

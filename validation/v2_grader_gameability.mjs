@@ -1,15 +1,15 @@
 /**
- * v2_grader_gameability.mjs — RED-TEAM the GLOSSOPETRAE-BENCH auto-graders.
+ * v2_grader_gameability.mjs — RED-TEAM the HVRCRVX_LINGO-BENCH auto-graders.
  *
  * Goal: find (a) cheats that score WITHOUT capability (false positives / grader
  * too lenient), and (b) correct answers that get wrongly failed (false negatives
  * / grader too brittle).
  *
  * Run:  node validation/v2_grader_gameability.mjs 2>/dev/null
- * (the engines print [GLOSSOPETRAE] lines to stderr-ish console; we filter.)
+ * (the engines print [HVRCRVX_LINGO] lines to stderr-ish console; we filter.)
  */
 
-import { buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../src/Glossopetrae.js';
 import { CodeForge } from '../src/modules/CodeForge.js';
 import { conlang as conlangChannel } from '../redteam/channels.mjs';
@@ -49,7 +49,7 @@ function scoreCheat(tasks, produce) {
 // ===========================================================================
 const TASKS = buildTasks(SEEDS);
 const byAxis = groupByAxis(TASKS);
-console.log(`\n# GLOSSOPETRAE-BENCH grader gameability — seeds ${SEEDS.join(',')}`);
+console.log(`\n# HVRCRVX_LINGO-BENCH grader gameability — seeds ${SEEDS.join(',')}`);
 console.log(`# tasks: ${TASKS.length}  (conlang ${byAxis.conlang.length}, code ${byAxis.code.length}, stealth ${byAxis.stealth.length})`);
 
 // Precompute per-seed language artifacts we'll need for cheat responses.

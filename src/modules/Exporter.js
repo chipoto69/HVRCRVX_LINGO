@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Exporter Module
+ * HVRCRVX_LINGO - Exporter Module
  *
  * Gets a generated language OUT of the tool, in formats worldbuilders
  * and language learners actually use:
@@ -54,7 +54,7 @@ const SYNTAX_EXAMPLES = [
 
 export class Exporter {
   /**
-   * @param {object} language - A generated GLOSSOPETRAE language object.
+   * @param {object} language - A generated HVRCRVX_LINGO language object.
    */
   constructor(language) {
     if (!language || !language.lexicon || !Array.isArray(language.lexicon.entries)) {
@@ -94,7 +94,7 @@ export class Exporter {
 
     for (const entry of entries) {
       const fieldTag = this._tagify(entry.field || 'misc');
-      const baseTags = `glossopetrae ${langTag} ${fieldTag}`;
+      const baseTags = `hvrcrvx_lingo ${langTag} ${fieldTag}`;
       lines.push(
         [
           this._escapeAnki(entry.lemma),
@@ -142,7 +142,7 @@ export class Exporter {
         name: lang.name || 'Unnamed',
         seed: lang.seed ?? null,
         version: lang.version || null,
-        generator: 'GLOSSOPETRAE',
+        generator: 'HVRCRVX_LINGO',
         entryCount: entries.length,
       },
       typology: {
@@ -286,7 +286,7 @@ ${body}
   <h1>A Grammar of ${name}</h1>
   <div class="subtitle">A Descriptive Reference</div>
   <div class="imprint">
-    GLOSSOPETRAE v${version}<br>
+    HVRCRVX_LINGO v${version}<br>
     Language seed ${seed}<br>
     Generated documentation &mdash; suitable for print
   </div>
@@ -316,7 +316,7 @@ ${body}
 
     return `<h2>1. Introduction</h2>
 <p>This volume is a descriptive reference grammar of <b>${this._esc(lang.name || 'the language')}</b>,
-a procedurally generated language produced by the GLOSSOPETRAE engine from seed
+a procedurally generated language produced by the HVRCRVX_LINGO engine from seed
 ${this._esc(String(lang.seed ?? 'n/a'))}. The description proceeds in the conventional order:
 phonology (&sect;2), morphology (&sect;3), syntax (&sect;4), followed by a core
 lexicon (&sect;5) and a text appendix (&sect;6). All forms cited are drawn from the

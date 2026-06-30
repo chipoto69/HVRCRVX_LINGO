@@ -4,7 +4,7 @@
  *    score tracks ability at r=0.9999."
  *
  * THESIS UNDER ATTACK
- *   E5 frames GLOSSOPETRAE-BENCH as a "statistically sound instrument" with
+ *   E5 frames HVRCRVX_LINGO-BENCH as a "statistically sound instrument" with
  *   near-perfect reliability/discrimination. I claim those headline numbers are
  *   PROPERTIES OF E5'S SIMULATED POPULATION, not of the instrument:
  *
@@ -32,7 +32,7 @@
  * Run: node validation/thesis/e5_refute.mjs
  */
 
-import { buildTasks, runBenchmark } from '../../bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from '../../bench/hvrcrvx-lingo-bench.mjs';
 
 const SEEDS = Array.from({ length: 60 }, (_, i) => i + 1);
 const TASK_TYPES = [

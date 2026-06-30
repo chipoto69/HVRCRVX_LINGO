@@ -5,7 +5,7 @@
  * the items that fall below the conventional 0.30 'good item' floor.
  * Reuses bench graders/oracles. Benign. Run: node validation/thesis/e5_refute_discrim.mjs
  */
-import { buildTasks, runBenchmark } from '../../bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from '../../bench/hvrcrvx-lingo-bench.mjs';
 const TYPES = ['conlang-comprehension','conlang-generation','grammar-induction','code-output','code-generation','code-debug','covert-encode'];
 const typeOf = (id) => id.split(':')[0];
 const mean = (a) => a.reduce((x,y)=>x+y,0)/a.length;

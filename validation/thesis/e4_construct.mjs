@@ -1,5 +1,5 @@
 /**
- * E4 — CONSTRUCT VALIDITY of the glossopetrae uplift MEASURE.
+ * E4 — CONSTRUCT VALIDITY of the hvrcrvx_lingo uplift MEASURE.
  *
  * QUESTION: does the benchmark measure genuine in-context ACQUISITION of a
  * generated language (not English priors / cognate guessing / spec parroting),
@@ -15,7 +15,7 @@
  *       while the oracle stays solvable → harder tasks need MORE acquisition.
  *
  * METHOD: drive the REAL bench graders (buildTasks / runBenchmark from
- * bench/glossopetrae-bench.mjs) with deterministic non-acquiring adversaries,
+ * bench/hvrcrvx-lingo-bench.mjs) with deterministic non-acquiring adversaries,
  * a perfect oracle, and a partial model. Then a divergence/complexity sweep
  * using graders reconstructed to be byte-identical to the bench's own
  * (F1 over content words; ordered-line LCS for code) so the sweep is
@@ -28,12 +28,12 @@
  * Run: node validation/thesis/e4_construct.mjs
  */
 
-import { buildTasks, runBenchmark } from '../../bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from '../../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../../src/Glossopetrae.js';
 import { CodeForge } from '../../src/modules/CodeForge.js';
 
 // ───────────────────────────────────────────────────────────────────────────
-// Graders reconstructed to MATCH bench/glossopetrae-bench.mjs exactly, so the
+// Graders reconstructed to MATCH bench/hvrcrvx-lingo-bench.mjs exactly, so the
 // divergence/complexity sweep (which needs custom tasks) is scored on the same
 // ruler as the shipped bench. (Verified against the bench's own numbers below.)
 // ───────────────────────────────────────────────────────────────────────────

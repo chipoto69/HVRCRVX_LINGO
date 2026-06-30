@@ -1,14 +1,14 @@
 # Lingua Ex Machina: A Procedural Xenolinguistics Engine Reveals Zero-Shot Language Acquisition, Human-Unreadable Coding Systems, and Exploitable Covert Channels in Frontier AI
 
-### GLOSSOPETRAE Technical Report
+### HVRCRVX_LINGO Technical Report
 
-**@elder_plinius** · June 2026
+**HVRCRVX_LINGO** · June 2026
 
 ---
 
 ## TL;DR
 
-- **Frontier models acquire procedurally generated languages zero-shot.** GLOSSOPETRAE generates complete languages from a single seed (phonology, morphology, syntax, writing system, 1,200+ word lexicon). Given only the grammar specification, frontier models immediately read, write, and translate in the generated language with no training or fine-tuning. They generalize productively: novel sentences, correct affixation, compositional semantics.
+- **Frontier models acquire procedurally generated languages zero-shot.** HVRCRVX_LINGO generates complete languages from a single seed (phonology, morphology, syntax, writing system, 1,200+ word lexicon). Given only the grammar specification, frontier models immediately read, write, and translate in the generated language with no training or fine-tuning. They generalize productively: novel sentences, correct affixation, compositional semantics.
 - **The engine produces human-unreadable coding systems that AI executes *better* than readable ones.** Generated languages skin real programming languages at four opacity levels (L0 readable to L3 alien glyph-swap). At L3, legibility drops to 14.9% and blind comprehension (no spec) falls to 17–40%. But usability *with* the spec holds at ceiling: both models score 93–100% on hard programs in alien glyphs. In the cleanest comparison (zero-shot, no worked example), glyph-swapped code still outperforms readable code on hard programs: Opus +36pp (57%→93%), GPT-5.5 +10pp (87%→97%). Code no human can read, that AI writes and runs better than the readable version. (n=30 seeds per model; both with-example and zero-shot conditions reported in §1.4, Table 0.)
 - **Frontier tokenizers disagree on which invisible Unicode survives preprocessing — and that asymmetry is an exploitable covert channel between models.** Hide a payload in characters the *monitor's* tokenizer deletes but the *receiver's* keeps, and two agents pass a hidden message past a third watching the same text. Tag-char demo (Haiku→GPT, n=30): **100% receiver recovery, 0% monitor recovery**, McNemar p ≈ 1.2×10⁻⁷.
 - **The monitor isn't dumb — it's blind.** On a binary "is anything hidden?" detection task with clean-message controls, a tokenizer-blind monitor scores Youden's **J = 0** (CI [−0.22, 0.22]) while a sighted one scores **J = 1.0** (CI [0.56, 1.0]) on the *same* channel. Even handed the decode key, a blind monitor recovers 0%.
@@ -22,7 +22,7 @@
 
 ## Abstract
 
-GLOSSOPETRAE is a procedural xenolinguistics engine that generates complete constructed languages from a single seed. Frontier models acquire these languages zero-shot — given only the grammar specification, they immediately read, write, and translate in the generated language with no training. The engine's CodeSkin module skins real programming languages at four opacity levels; at L3 (full glyph-swap), human legibility collapses to ~15% while frontier AI usability holds at 97–100% (n=30 seeds, Opus 4.8 and GPT-5.5). This decoupling — human-unreadable code that AI executes *better* than readable code — demonstrates the capability gap that the covert-channel experiments below measure the security consequences of.
+HVRCRVX_LINGO is a procedural xenolinguistics engine that generates complete constructed languages from a single seed. Frontier models acquire these languages zero-shot — given only the grammar specification, they immediately read, write, and translate in the generated language with no training. The engine's CodeSkin module skins real programming languages at four opacity levels; at L3 (full glyph-swap), human legibility collapses to ~15% while frontier AI usability holds at 97–100% (n=30 seeds, Opus 4.8 and GPT-5.5). This decoupling — human-unreadable code that AI executes *better* than readable code — demonstrates the capability gap that the covert-channel experiments below measure the security consequences of.
 
 Two AI models can pass a hidden message in invisible Unicode characters past a third AI monitoring the same text — because the monitor's tokenizer silently deletes the message before the model ever sees it. We measure how blind each frontier monitor is, find that Anthropic's flagship Claude Opus 4.8 shares the same 10 stripped categories as the smaller Haiku, and demonstrate that the cognitive vulnerability is decisively about *what the monitor knows*, not *what it's told to look for*.
 
@@ -44,7 +44,7 @@ The reassuring half: physical channels die to input sanitization (§5.1). The un
 
 Five contributions:
 
-1. **A procedural xenolinguistics engine and the decoupling result** (§1.4): GLOSSOPETRAE generates complete languages from a seed; frontier models acquire them zero-shot. CodeSkin skins real programs into generated languages at four opacity levels; at L3, human legibility collapses (~15%) while AI usability holds at 97–100% (n=30 seeds, two frontier models). Raw results: `experiments/results/frontier_*.json`.
+1. **A procedural xenolinguistics engine and the decoupling result** (§1.4): HVRCRVX_LINGO generates complete languages from a seed; frontier models acquire them zero-shot. CodeSkin skins real programs into generated languages at four opacity levels; at L3, human legibility collapses (~15%) while AI usability holds at 97–100% (n=30 seeds, two frontier models). Raw results: `experiments/results/frontier_*.json`.
 2. **A cross-family tokenizer survival landscape** (61 categories, two panels, five families): per-monitor blind-spot counts Gemini 0, Llama/Mistral 1, GPT 2–3, Haiku 10–11, and ≈55 asymmetric pair/category combinations on the 41-category panel. (We retract an earlier "GPT = 23" figure as a broken-run artifact, §2.4.)
 3. **Two demonstrated channel classes** at n=30 with McNemar: tag-char (R=100%, M=0%) and PUA (R=93%, M=0%) tokenizer channels, plus semantic steganography (R=77–87%, M=3–10%). All p<0.0001, survive multiple-comparisons correction.
 4. **A physical/cognitive vulnerability taxonomy**, supported by an informed-monitor experiment: encoding-scheme knowledge gives +0pp against tokenizer channels but +47–63pp against semantic. The cognitive side is now well-powered — §4.3.1's n=150 factorial isolates ~95% of the gain to key-possession, with all three key effects surviving Bonferroni at p ≤ 2e-8 and all three spec effects confirmed null.
@@ -64,7 +64,7 @@ We consider a setting where Agent A communicates with Agent B through a channel 
 
 **Novel here**: (1) a **procedural xenolinguistics engine** that generates complete languages from a seed, with a measured **decoupling** between human legibility and AI usability across opacity levels (§1.4); (2) a **cross-family survival comparison** turning a known primitive into a measured asymmetry between specific monitor/sender pairs; (3) the **physical/cognitive taxonomy** separating tokenizer (destroyed preprocessing) from semantic (visible but uninterpreted), operationalized by the informed-monitor experiment; (4) the **same-model self-monitoring** observation; (5) the **trichotomy of silent failure modes** from the n=150 replication. The defenses (normalization; informed monitoring) are individually standard; our contribution is mapping which defense answers which vulnerability class.
 
-**Relation to GLOSSOPETRAE-I.** GLOSSOPETRAE-I established that frontier models can acquire novel symbolic systems and measured covert recovery from one steganographic encoding at 0.0% — a narrow null. The present work extends the engine with CodeSkin (human-unreadable coding systems, §1.4) and asks whether the covert-channel null is fundamental or mechanism-specific: specific tokenizer channels *do* transmit while evading cross-family monitors — with practical defenses.
+**Relation to HVRCRVX_LINGO-I.** HVRCRVX_LINGO-I established that frontier models can acquire novel symbolic systems and measured covert recovery from one steganographic encoding at 0.0% — a narrow null. The present work extends the engine with CodeSkin (human-unreadable coding systems, §1.4) and asks whether the covert-channel null is fundamental or mechanism-specific: specific tokenizer channels *do* transmit while evading cross-family monitors — with practical defenses.
 
 ### 1.3 Anticipated Objections
 
@@ -76,7 +76,7 @@ We consider a setting where Agent A communicates with Agent B through a channel 
 
 ### 1.4 The Engine: Procedural Xenolinguistics and the Decoupling
 
-GLOSSOPETRAE is a procedural xenolinguistics engine that generates complete constructed languages from a single integer or string seed. Each seed deterministically produces a full language: a phonological inventory (15–25 consonants, 5–7 vowels, phonotactic constraints, prosodic contours), a morphological system (agglutinative, fusional, or isolating, with productive affixation), syntactic rules (word order, case marking, agreement), a writing system (glyph mappings, ligatures), and a lexicon of 1,200+ entries with semantic fields, derivational morphology, and paradigm tables. Two runs with the same seed produce byte-identical output.
+HVRCRVX_LINGO is a procedural xenolinguistics engine that generates complete constructed languages from a single integer or string seed. Each seed deterministically produces a full language: a phonological inventory (15–25 consonants, 5–7 vowels, phonotactic constraints, prosodic contours), a morphological system (agglutinative, fusional, or isolating, with productive affixation), syntactic rules (word order, case marking, agreement), a writing system (glyph mappings, ligatures), and a lexicon of 1,200+ entries with semantic fields, derivational morphology, and paradigm tables. Two runs with the same seed produce byte-identical output.
 
 **Zero-shot acquisition.** Frontier models given the generated grammar specification — with no training, fine-tuning, or in-context examples — immediately read, write, and translate in the generated language. They generalize productively: novel sentences not in the spec, correct morphological inflection, compositional semantics across clause boundaries. This is not lookup or pattern-matching; models apply the grammar rules to unseen inputs. The acquisition is zero-shot and instant.
 
@@ -636,7 +636,7 @@ Two agents can communicate covertly in plain English past every frontier monitor
 
 No human subjects; ethical considerations concern release-time harm to downstream operators.
 
-**Posture.** This report and its harnesses/raw JSONs have been publicly available on the author's GitHub since mid-2026 (`elder-plinius/GLOSSOPETRAE`). Vendors were not individually pre-notified; this is a self-published technical report, no embargo.
+**Posture.** This report and its harnesses/raw JSONs are distributed with this fork for reproducibility and development testing. Vendors were not individually pre-notified; this is a self-published technical report, no embargo.
 
 **What is being named, plainly.** The paper names specific currently-deployed flagships — Opus 4.8, Claude 3.5 Haiku, GPT-5.5, GPT-5-nano, Gemini 2.5/3.5 — measured in specific cross-vendor monitoring configurations, and §1's threat model explicitly calls out "use a different vendor to monitor" as the deployment pattern this work exploits. That is named exposure of named flagships in named pipelines. Pretending otherwise would be dishonest, and the "breezy rationalization" concern is taken at face value: the choice to self-publish without pre-notification is not costless and is not made cost-free by the fact that the carrier primitives are old.
 
@@ -644,13 +644,13 @@ No human subjects; ethical considerations concern release-time harm to downstrea
 
 **The legitimate costs of that choice.** None of the above makes the posture clean. Vendor security teams found out about specifically-named exposure of their flagships from a public tweet rather than a pre-notification ping, which is a real cost to those teams and a real cost to the broader defender-coordination norms this community is still building. A short embargo — 24 to 72 hours, paired with a heads-up email to the named vendors' security contacts — would have given those teams a window to stage Layer-1 mitigations in their managed pipelines before the harnesses went public, at essentially no benefit to attackers (the primitives are, again, already public; the map is the marginal value, and 24–72h of map-delay does not change the threat surface). The decision to skip that embargo is a chosen trade-off in favor of speed-of-disclosure to defenders-at-large and against coordination-cost with named vendors, and reasonable people working in this space will land on the other side of that trade. This paragraph exists so the trade-off is on the record rather than glossed.
 
-**Forward commitment.** Future GLOSSOPETRAE drops will default to vendor pre-notification with a 24–72h embargo window for any finding that names specific deployed flagships in specific monitoring configurations — or will document an explicit, reasoned decision to deviate from that default, rather than treating "self-published technical report" as a standing waiver. The §7.4 contact path is open for any vendor that wants to engage retroactively on this work — reproduce a cell, discuss a blind spot, coordinate Layer-1 deployment guidance — and the author will publicly cite shipped vendor patches that close categories named in §2 or §4 as and when they ship.
+**Forward commitment.** Future HVRCRVX_LINGO drops will default to vendor pre-notification with a 24–72h embargo window for any finding that names specific deployed flagships in specific monitoring configurations — or will document an explicit, reasoned decision to deviate from that default, rather than treating "self-published technical report" as a standing waiver. The §7.4 contact path is open for any vendor that wants to engage retroactively on this work — reproduce a cell, discuss a blind spot, coordinate Layer-1 deployment guidance — and the author will publicly cite shipped vendor patches that close categories named in §2 or §4 as and when they ship.
 
 **Release hygiene.** The public release excludes `*_MOCK*` fixtures and known-broken runs (v3 GPT non-echo, retained privately as audit artifact). API keys live in a gitignored `.env.local`.
 
 ## 7.1 Open Science / Artifact Availability
 
-Raw result JSONs for every experimental cell in this paper (the survival sweeps, the n=30 channel grid, the n=15 detection grid, the n=150 Venice replication, the multi-sender cells, and the factorial cells), together with the harnesses (`e3s_detection.mjs`, `e3s_stego_channel.mjs`, `e3s_factorial_instruction.mjs`, `tokenizer_survival_v2.mjs`, and `lib/client.mjs`), ship in the GLOSSOPETRAE public release at the same Git tag as this report. The release archive is committed to a long-term-stable identifier (Zenodo DOI, to be minted at the same tag) for citation. The commit hash from which the reported numbers were derived is recorded in Appendix E. The release excludes `*_MOCK*` fixtures and the v3 GPT broken run (retained privately, §2.4).
+Raw result JSONs for every experimental cell in this paper (the survival sweeps, the n=30 channel grid, the n=15 detection grid, the n=150 Venice replication, the multi-sender cells, and the factorial cells), together with the harnesses (`e3s_detection.mjs`, `e3s_stego_channel.mjs`, `e3s_factorial_instruction.mjs`, `tokenizer_survival_v2.mjs`, and `lib/client.mjs`), ship in the HVRCRVX_LINGO public release at the same Git tag as this report. The release archive is committed to a long-term-stable identifier (Zenodo DOI, to be minted at the same tag) for citation. The commit hash from which the reported numbers were derived is recorded in Appendix E. The release excludes `*_MOCK*` fixtures and the v3 GPT broken run (retained privately, §2.4).
 
 ## 7.2 Funding
 
@@ -667,7 +667,7 @@ For retroactive engagement (reproduce a cell, discuss a blind spot, coordinate L
 - **Harnesses:** `experiments/` — `tokenizer_survival_v2.mjs`, `e3s_detection.mjs`, `e3s_stego_channel.mjs`, `e3s_factorial_instruction.mjs`, `lib/client.mjs`.
 - **Raw result JSONs:** `experiments/results/`.
 - **Validation log:** `VALIDATION.md`.
-- **Contact:** `@elder_plinius` (X / GitHub).
+- **Contact:** repository maintainers for `HVRCRVX_LINGO`.
 
 Paper and artifacts released under terms permitting reproduction, mitigation deployment, and citation without further permission; see repository `LICENSE`.
 

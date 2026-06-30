@@ -1,8 +1,13 @@
 {
-  "name": "glossopetrae",
-  "version": "3.1.0",
+  "name": "hvrcrvx_lingo",
+  "version": "0.1.0",
   "type": "module",
   "private": true,
+  "exports": {
+    ".": "./src/HvrcrvxLingo.js",
+    "./skill": "./src/skill/HvrcrvxLingoSkill.js",
+    "./legacy": "./src/Glossopetrae.js"
+  },
   "scripts": {
     "test": "node test-smoke-edge-cases.mjs && node test-bench-integrity.mjs && node test-enthusiast.mjs"
   }

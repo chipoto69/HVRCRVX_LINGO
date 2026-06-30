@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - ReverseTranslator test suite
+ * HVRCRVX_LINGO - ReverseTranslator test suite
  *
  * Run: node test-reverse.mjs
  *

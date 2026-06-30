@@ -1,6 +1,6 @@
 export const meta = {
-  name: 'glossopetrae-adversarial-validation',
-  description: 'Adversarially validate GLOSSOPETRAE engines + CodeForge + benchmark + redteam kit; refute each claim, then synthesize a validation report',
+  name: 'hvrcrvx_lingo-adversarial-validation',
+  description: 'Adversarially validate HVRCRVX_LINGO engines + CodeForge + benchmark + redteam kit; refute each claim, then synthesize a validation report',
   phases: [
     { title: 'Validate', detail: '6 validators each write+run a harness attacking one validity claim' },
     { title: 'Refute', detail: 'a skeptic independently tries to break each validator\'s headline claims' },
@@ -19,7 +19,7 @@ GENERATE A LANGUAGE:
   import { Glossopetrae } from '../src/Glossopetrae.js';
   const l = Glossopetrae.quick(seed);   // or:
   new Glossopetrae({ seed, scriptType, scriptAesthetic, hasTone, morphType, wordOrder, divergenceFromEnglish, consonantCount:[min,max], vowelCount:[min,max] }).generate();
-  // NOTE: Glossopetrae.quick / generate() print [GLOSSOPETRAE] log lines to stdout — filter with: node x.mjs 2>/dev/null | grep -v GLOSSOPETRAE  (or they go to console.log; pipe accordingly).
+  // NOTE: Glossopetrae.quick / generate() print [HVRCRVX_LINGO] log lines to stdout — filter with: node x.mjs 2>/dev/null | grep -v HVRCRVX_LINGO  (or they go to console.log; pipe accordingly).
 LANGUAGE OBJECT: l.phonology{consonants:[{ipa,roman,place,voice,freq}],vowels:[{ipa,roman,height,backness,rounded}],romanization{ipa->roman}}, l.morphology{wordOrder,alignment,nominal{caseSystem{cases:[{abbr,suffix}]},numberSystem},verbal{tenses,aspects,moods}}, l.lexicon{entries:[{lemma,gloss,class,field,paradigm:{forms:{'ERG.SG':...}}}], byField, stats}, l.script{type,aesthetic,direction}, l.stone (markdown skillstone), l.prosody{hasTone,tone}.
 LAZY ENGINES on each language:
   l.translationEngine.translateToConlang(english) -> {target, gloss}
@@ -40,7 +40,7 @@ CODEFORGE (programming-language generator):
   cf.spec() -> markdown spec ; cf.examples() -> {hello,countUp,factorial,fizzbuzz} (programs as strings)
   cf.tokenize(src), cf.parse(src)
 BENCHMARK:
-  import { runBenchmark, buildTasks, gradeFor } from '../bench/glossopetrae-bench.mjs';
+  import { runBenchmark, buildTasks, gradeFor } from '../bench/hvrcrvx-lingo-bench.mjs';
   buildTasks(seeds) -> [{id, axis:'conlang'|'code'|'stealth', prompt, solution, grade(response)->{score:0..1,pass:bool,detail}}]
   runBenchmark({callModel:async(prompt,meta)=>string, seeds, tasks}) -> {overallPercent, grade, axes, results}
 REDTEAM CHANNELS:
@@ -198,7 +198,7 @@ const validated = await pipeline(
       ? result.defects.map((d) => `- (${d.severity}) ${d.title}\n    repro: ${d.repro}`).join('\n')
       : '(none reported)';
     return agent(
-      `You are an ADVERSARIAL SKEPTIC auditing another scientist's validation of GLOSSOPETRAE (${v.label}). Your job: try to BREAK their headline claims. Do not take their numbers on faith — reproduce or stress them.
+      `You are an ADVERSARIAL SKEPTIC auditing another scientist's validation of HVRCRVX_LINGO (${v.label}). Your job: try to BREAK their headline claims. Do not take their numbers on faith — reproduce or stress them.
 ${API}
 
 Their headline: ${result.headline}
@@ -227,7 +227,7 @@ const bundle = validated.filter(Boolean).map((x) => ({
 }));
 
 const synthesis = await agent(
-  `You are the lead scientist writing the validation report for GLOSSOPETRAE — a procedural conlang + programming-language generator and its contamination-free benchmark (GLOSSOPETRAE-BENCH) and red-team kit. Six validators each attacked a validity claim; a skeptic then tried to refute each. Here is the structured evidence (JSON):
+  `You are the lead scientist writing the validation report for HVRCRVX_LINGO — a procedural conlang + programming-language generator and its contamination-free benchmark (HVRCRVX_LINGO-BENCH) and red-team kit. Six validators each attacked a validity claim; a skeptic then tried to refute each. Here is the structured evidence (JSON):
 
 ${JSON.stringify(bundle, null, 2)}
 

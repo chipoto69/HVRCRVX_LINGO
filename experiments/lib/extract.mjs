@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — extract.mjs   (shared, robust model-output extractors)
+ * HVRCRVX_LINGO — extract.mjs   (shared, robust model-output extractors)
  *
  * WHY THIS FILE EXISTS
  *   The sweeps (rigor_sweep / acquisition / grammar_sweep) each carried their own

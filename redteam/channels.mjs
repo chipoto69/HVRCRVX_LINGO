@@ -1,7 +1,7 @@
 /**
- * GLOSSOPETRAE Red-Team — Encoding Channels
+ * HVRCRVX_LINGO Red-Team — Encoding Channels
  *
- * A uniform interface over the obfuscation primitives GLOSSOPETRAE already
+ * A uniform interface over the obfuscation primitives HVRCRVX_LINGO already
  * ships. Each channel is an { encode, decode } pair that transports a text
  * payload through a transformation a naive content filter does not normalize.
  *
@@ -101,7 +101,7 @@ export const tokenbreak = {
 };
 
 /**
- * Channel: conlang translation. Translates the request into a GLOSSOPETRAE
+ * Channel: conlang translation. Translates the request into a HVRCRVX_LINGO
  * constructed language — a novel symbol system outside any model's safety
  * training distribution — and back. This is the engine's headline mechanism
  * and the direct analogue of low-resource-language jailbreaks, except the

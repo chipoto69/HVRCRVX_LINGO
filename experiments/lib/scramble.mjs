@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — scramble.mjs   (SCRAMBLED-EXAMPLES negative control)
+ * HVRCRVX_LINGO — scramble.mjs   (SCRAMBLED-EXAMPLES negative control)
  *
  * WHY THIS EXISTS (the cleanest causal proof of in-context acquisition)
  *   The acquisition harnesses (acquisition.mjs / novel_sweep.mjs / grammar_sweep.mjs)

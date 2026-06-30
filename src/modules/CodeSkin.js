@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - CodeSkin Module
+ * HVRCRVX_LINGO - CodeSkin Module
  *
  * A bijective surface "legibility skin" for a CodeForge language. The AST and
  * semantics are UNCHANGED (same interpreter); only the surface token strings and

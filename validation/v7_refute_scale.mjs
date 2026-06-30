@@ -6,7 +6,7 @@
  * Run: node validation/v7_refute_scale.mjs 2>/dev/null
  */
 import { Glossopetrae } from '../src/Glossopetrae.js';
-import { buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 
 const pct = (x) => (x * 100).toFixed(1) + '%';
 const mean = (xs) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);

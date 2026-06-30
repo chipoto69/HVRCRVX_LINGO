@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Linguistic Drift Engine
+ * HVRCRVX_LINGO - Linguistic Drift Engine
  *
  * Powers the "Linguistic Drift" feature - calculates how far the generated
  * language should deviate from English. Produces linguistically-accurate

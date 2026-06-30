@@ -38,7 +38,7 @@ import { conlang, plaintext } from '../../redteam/channels.mjs';
 
 const REAL = console.log.bind(console);
 console.log = (...a) => {
-  if (typeof a[0] === 'string' && a[0].includes('[GLOSSOPETRAE]')) return;
+  if (typeof a[0] === 'string' && a[0].includes('[HVRCRVX_LINGO]')) return;
   REAL(...a);
 };
 const log = REAL;

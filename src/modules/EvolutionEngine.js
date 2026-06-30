@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Evolution Engine Module
+ * HVRCRVX_LINGO - Evolution Engine Module
  *
  * Diachronic linguistics simulator. Applies ordered, feature-based sound
  * changes to a generated language to produce descendant languages:

@@ -35,7 +35,7 @@ import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
-import { runBenchmark, buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { runBenchmark, buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../src/Glossopetrae.js';
 import { CodeForge } from '../src/modules/CodeForge.js';
 

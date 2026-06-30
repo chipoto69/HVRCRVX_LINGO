@@ -8,7 +8,7 @@
  * Reuses the bench's REAL graders/oracles. Benign only. Deterministic responder.
  * Run: node validation/thesis/e5_refute_power.mjs
  */
-import { buildTasks, runBenchmark } from '../../bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from '../../bench/hvrcrvx-lingo-bench.mjs';
 
 const mean = (a) => a.reduce((x, y) => x + y, 0) / a.length;
 const variance = (a) => { if (a.length < 2) return 0; const m = mean(a); return a.reduce((s, v) => s + (v - m) ** 2, 0) / (a.length - 1); };

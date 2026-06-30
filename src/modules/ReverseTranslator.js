@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Reverse Translator Module
+ * HVRCRVX_LINGO - Reverse Translator Module
  *
  * Decodes text in the generated language back into English. This is the
  * inverse of TranslationEngine.translateToConlang(): it inverts that

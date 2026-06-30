@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_factorial_instruction.mjs   (Factorial Instruction-Asymmetry Control)
+ * HVRCRVX_LINGO — e3s_factorial_instruction.mjs   (Factorial Instruction-Asymmetry Control)
  *
  * THE QUESTION (paper §3.2 confound)
  *   In semantic-stego runs, the receiver sees (method + key + output schema) and

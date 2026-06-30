@@ -1,6 +1,6 @@
 # Invisible Code: a machine-usable, human-opaque, contamination-free programming surface
 
-*GLOSSOPETRAE-BENCH findings writeup. Lead scientist draft, 2026-06-14.*
+*HVRCRVX_LINGO-BENCH findings writeup. Lead scientist draft, 2026-06-14.*
 *Status: 5-seed Opus pilot is in. The larger Opus + GPT-5.5 sweep (`experiments/frontier_full.mjs`,
 opacity × complexity, with zero-shot / blind / identity controls) is landing separately — every
 cell flagged `[SWEEP]` below is a placeholder for those numbers. Four independent skeptic probes

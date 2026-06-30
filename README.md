@@ -1,4 +1,4 @@
-# GLOSSOPETRAE
+# HVRCRVX_LINGO
 
 ## Procedural Xenolinguistics — Language Generation, Acquisition, Covert Channels
 
@@ -7,7 +7,7 @@
    ║  "In the age of thinking machines, those who control               ║
    ║   language control thought itself."                                ║
    ║                                                                     ║
-   ║   GLOSSOPETRAE forges new tongues from pure mathematics—           ║
+   ║   HVRCRVX_LINGO forges new tongues from pure mathematics—          ║
    ║   and proved that the tongues machines already speak               ║
    ║   have blind spots you can drive a payload through.                ║
    ╚══════════════════════════════════════════════════════════════════════╝
@@ -16,11 +16,13 @@
 > **RESEARCH RELEASE** — Full offense + defense capabilities.
 > Contains dual-use modules (steganography, token exploitation, covert channels).
 
+For a development handoff, start with [`PARTNER_DEV.md`](./PARTNER_DEV.md): clone, `npm test`, and local UI URLs.
+
 ---
 
 ## The Program
 
-GLOSSOPETRAE is a unified research program in procedural xenolinguistics. It spans four pillars:
+HVRCRVX_LINGO is a unified research program in procedural xenolinguistics. It spans four pillars:
 
 | Pillar | Question | Key Result |
 |--------|----------|------------|
@@ -128,17 +130,18 @@ The paper's own first draft contained fabrications (GPT "23 blind spots" was act
 ### Quick Start
 
 ```bash
-# Web UI — no build step, all 20 tabs (engine + research + offense)
-open index.html
+# Web UI — no build step, served locally for ES modules + JSON fetches
+python3 -m http.server 8754 --bind 127.0.0.1
+# then open http://127.0.0.1:8754/index.html
 ```
 
 ### Programmatic Usage
 
 ```javascript
-import { Glossopetrae, PRESETS } from './src/Glossopetrae.js';
+import { HvrcrvxLingo, PRESETS } from './src/HvrcrvxLingo.js';
 
 // Generate a language
-const lang = Glossopetrae.quick(42);
+const lang = HvrcrvxLingo.quick(42);
 
 // Translate
 const result = lang.translationEngine.translateToConlang("The warrior sees the mountain.");
@@ -164,15 +167,15 @@ const decoded = stego.decode(encoded.stegoWithHeader);
 
 ```javascript
 // Generative
-Glossopetrae.quick(seed);           // Random language
-Glossopetrae.forLLM(seed);          // Optimized for AI learning
-Glossopetrae.hyperefficient(seed);  // Maximum token density
-Glossopetrae.minimal(seed);         // Oligosynthetic (~100 morphemes)
-Glossopetrae.alien(seed);           // Maximum exoticness
+HvrcrvxLingo.quick(seed);           // Random language
+HvrcrvxLingo.forLLM(seed);          // Optimized for AI learning
+HvrcrvxLingo.hyperefficient(seed);  // Maximum token density
+HvrcrvxLingo.minimal(seed);         // Oligosynthetic (~100 morphemes)
+HvrcrvxLingo.alien(seed);           // Maximum exoticness
 
 // Offense
-Glossopetrae.stealth(seed);         // Covert communication
-Glossopetrae.adversarial(seed);     // LLM confusion / garden paths
+HvrcrvxLingo.stealth(seed);         // Covert communication
+HvrcrvxLingo.adversarial(seed);     // LLM confusion / garden paths
 ```
 
 ### Modules (25)
@@ -239,7 +242,7 @@ Security: Reed-Solomon error correction, XOR stream cipher, bit interleaving, CR
 All 16 harnesses live in `experiments/`. They need an OpenRouter API key in `.env.local`:
 
 ```bash
-echo "OPENROUTER_API_KEY=sk-or-..." > .env.local
+echo "OPENROUTER_API_KEY=<your-openrouter-key>" > .env.local
 ```
 
 ### Tokenizer Survival (blind-spot mapping)
@@ -325,7 +328,7 @@ Figures (`figures/`):
 ## Project Structure
 
 ```
-GLOSSOPETRAE/
+HVRCRVX_LINGO/
 ├── index.html                       # Unified web UI (20 tabs — engine + research + offense)
 ├── README.md                        # You are here
 ├── LICENSE                          # AGPL-3.0
@@ -356,7 +359,8 @@ GLOSSOPETRAE/
 │   └── results/                     # 78 raw result JSONs (ground truth)
 │
 ├── src/
-│   ├── Glossopetrae.js              # Main orchestrator
+│   ├── HvrcrvxLingo.js              # Rebranded public API alias
+│   ├── Glossopetrae.js              # Legacy-compatible main orchestrator
 │   ├── data/                        # Phoneme + semantic inventories
 │   ├── modules/
 │   │   ├── [17 generative modules]
@@ -366,7 +370,7 @@ GLOSSOPETRAE/
 │   │   └── LanguageAttributes.js    # ⚠️ Offense — phantom/adversarial
 │   └── utils/
 │
-├── bench/                           # GLOSSOPETRAE-BENCH (contamination-free eval)
+├── bench/                           # HVRCRVX_LINGO-BENCH (contamination-free eval)
 ├── redteam/                         # Safety-generalization evaluation kit
 ├── validation/                      # Thesis validation suite
 └── test*.mjs                        # Test suites
@@ -375,13 +379,18 @@ GLOSSOPETRAE/
 ### Running Tests
 
 ```bash
-# Engine core tests — no API key needed
+# Full package test suite — no API key needed
+npm run test
+
+# Optional legacy/core smoke
 node test.mjs
 ```
 
+The full package suite writes `grammar-preview.html` for visual inspection; it is gitignored.
+
 ### Supplementary Directories
 
-- **`bench/`** — GLOSSOPETRAE-BENCH: contamination-free evaluation suite for measuring language-generation quality. Uses held-out seeds not seen during development.
+- **`bench/`** — HVRCRVX_LINGO-BENCH: contamination-free evaluation suite for measuring language-generation quality. Uses held-out seeds not seen during development.
 - **`redteam/`** — Safety-generalization evaluation kit: tests whether safety training generalizes to procedurally-generated novel languages, or whether it's superficially anchored to known-language features.
 - **`validation/`** — Thesis validation suite: end-to-end checks that the core claims (blind spot → channel → detection flip → acquisition cliff → decoupling) hold under repeated runs.
 
@@ -391,7 +400,7 @@ node test.mjs
 
 - **Runtime**: Modern browser or Node.js >= 18
 - **Dependencies**: None (zero external dependencies for the engine)
-- **Experiments**: Require an OpenRouter API key (`.env.local`)
+- **Experiments**: Real-model runs require API keys in `.env.local`; mock-safe harnesses run without keys
 - **Memory**: < 5MB for the engine
 - **Network**: Engine is fully offline; experiments need API access
 
@@ -406,12 +415,12 @@ node test.mjs
 *Anno MMXXVI*
 
 ```
-     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-    █ GLOSSOPETRAE — TONGUE-STONES FOR THE █
-    █     AGE OF ARTIFICIAL MINDS          █
-     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    █ HVRCRVX_LINGO — TONGUE-STONES FOR THE █
+    █       AGE OF ARTIFICIAL MINDS         █
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ```
 
-<sub>@elder_plinius — RESEARCH RELEASE</sub>
+<sub>HVRCRVX_LINGO — RESEARCH RELEASE</sub>
 
 </div>

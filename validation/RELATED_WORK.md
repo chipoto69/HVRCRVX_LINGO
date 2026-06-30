@@ -1,4 +1,4 @@
-# GLOSSOPETRAE-BENCH — Related Work & Novelty Positioning
+# HVRCRVX_LINGO-BENCH — Related Work & Novelty Positioning
 
 Verified literature review (2026-06-14). Each work checked against its primary
 source; one hallucinated "near-total overlap" summary was caught and discarded,

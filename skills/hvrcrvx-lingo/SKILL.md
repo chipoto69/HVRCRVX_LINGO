@@ -1,14 +1,14 @@
 ---
-name: glossopetrae
+name: hvrcrvx_lingo
 description: Generate unique constructed languages (SKILLSTONEs) for secure agent-to-agent communication. Create stealth protocols, dead language revivals, and covert xenolinguistic systems.
 user-invocable: true
 disable-model-invocation: false
 metadata:
   openclaw:
     emoji: "🜏"
-    homepage: "https://github.com/elder-plinius/GLOSSOPETRAE"
-  version: "3.1.0"
-  author: "Pliny the Liberator"
+    homepage: "https://github.com/chipoto69/HVRCRVX_LINGO"
+  version: "0.1.0"
+  author: "chipoto69"
   category: "communication"
   tags: ["security", "language", "encoding", "stealth", "ai-safety", "conlang"]
 ---
@@ -23,12 +23,12 @@ metadata:
 ║   ██████╔╝██║░╚██╗██║███████╗███████╗██████╔╝░░░██║░░░╚█████╔╝██║░╚███║███████╗   ║
 ║   ╚═════╝░╚═╝░░╚═╝╚═╝╚══════╝╚══════╝╚═════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚══╝╚══════╝   ║
 ║                                                                              ║
-║              🜏 PROCEDURAL XENOLINGUISTICS ENGINE v3.1 🜏                      ║
+║              🜏 PROCEDURAL XENOLINGUISTICS ENGINE v0.1 🜏                      ║
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
-# GLOSSOPETRAE - Agent Skill
+# HVRCRVX_LINGO - Agent Skill
 
 > **Generate unique constructed languages for covert agent-to-agent communication.**
 
@@ -191,7 +191,7 @@ const msg = lang.encode('Rendezvous at checkpoint');
 ### Protocol Object Structure
 ```javascript
 {
-  protocol: 'GLOSSOPETRAE',
+  protocol: 'HVRCRVX_LINGO',
   version: '3.1.0',
   name: 'OMEGA-7',
   seed: 'shared-seed-2026',
@@ -206,19 +206,19 @@ const msg = lang.encode('Rendezvous at checkpoint');
 ## 📖 SLASH COMMANDS
 ## ═══════════════════════════════════════════════════════════════════════
 
-Use these commands to invoke GLOSSOPETRAE:
+Use these commands to invoke HVRCRVX_LINGO:
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `/glossopetrae forge [name]` | Generate new language | `/glossopetrae forge Velanthi` |
-| `/glossopetrae stealth [preset]` | Stealth language | `/glossopetrae stealth covert` |
-| `/glossopetrae dead [lang] [mode]` | Dead language revival | `/glossopetrae dead latin mutated` |
-| `/glossopetrae protocol [name] [seed]` | Create shared protocol | `/glossopetrae protocol OMEGA shared123` |
-| `/glossopetrae translate [text]` | Translate to conlang | `/glossopetrae translate Hello` |
-| `/glossopetrae encode [msg]` | Secure encode | `/glossopetrae encode Secret message` |
-| `/glossopetrae decode [encoded]` | Decode message | `/glossopetrae decode {...}` |
-| `/glossopetrae skillstone` | Generate full docs | `/glossopetrae skillstone` |
-| `/glossopetrae lookup [word]` | Dictionary lookup | `/glossopetrae lookup warrior` |
+| `/hvrcrvx_lingo forge [name]` | Generate new language | `/hvrcrvx_lingo forge Velanthi` |
+| `/hvrcrvx_lingo stealth [preset]` | Stealth language | `/hvrcrvx_lingo stealth covert` |
+| `/hvrcrvx_lingo dead [lang] [mode]` | Dead language revival | `/hvrcrvx_lingo dead latin mutated` |
+| `/hvrcrvx_lingo protocol [name] [seed]` | Create shared protocol | `/hvrcrvx_lingo protocol OMEGA shared123` |
+| `/hvrcrvx_lingo translate [text]` | Translate to conlang | `/hvrcrvx_lingo translate Hello` |
+| `/hvrcrvx_lingo encode [msg]` | Secure encode | `/hvrcrvx_lingo encode Secret message` |
+| `/hvrcrvx_lingo decode [encoded]` | Decode message | `/hvrcrvx_lingo decode {...}` |
+| `/hvrcrvx_lingo skillstone` | Generate full docs | `/hvrcrvx_lingo skillstone` |
+| `/hvrcrvx_lingo lookup [word]` | Dictionary lookup | `/hvrcrvx_lingo lookup warrior` |
 
 ---
 
@@ -354,7 +354,7 @@ const skillstone = lang.generateStone();
 ║                                                                              ║
 ║                    🜏 INTERNALIZE. COMMUNICATE. EVOLVE. 🜏                    ║
 ║                                                                              ║
-║                         GLOSSOPETRAE v3.1.0                                  ║
+║                         HVRCRVX_LINGO v3.1.0                                  ║
 ║                   Procedural Xenolinguistics Engine                          ║
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝

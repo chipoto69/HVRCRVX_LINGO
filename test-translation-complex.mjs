@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Complex Translation Tests
+ * HVRCRVX_LINGO - Complex Translation Tests
  * Tests compound sentences, subordinate clauses, coordinated NPs, and infinitives
  */
 
