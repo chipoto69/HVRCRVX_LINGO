@@ -7,7 +7,7 @@
  *   node bench/_synthetic-demo.mjs        # writes bench/results/SYNTHETIC_*.json
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { runBenchmark } from './glossopetrae-bench.mjs';
+import { runBenchmark } from './hvrcrvx-lingo-bench.mjs';
 
 // Deterministic per-task "competence": a capable model answers correctly with
 // probability p(axis); otherwise it emits an axis-appropriate wrong answer.

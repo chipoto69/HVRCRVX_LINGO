@@ -51,7 +51,7 @@ PROBE S2 — Is the L3 surface ACTUALLY uncrackable, or could a determined analy
 PROBE S3 — Is the ASCII-ratio legibility proxy sound, or is it hand-wavy? Write experiments/falsify/s3_legibility.mjs:
 1. Compute MULTIPLE legibility metrics on L0/L2/L3 programs across seeds: current proxy (ascii+wordHint), Shannon char entropy, fraction of dictionary English words, fraction of tokens that are pronounceable, % of glyphs outside Basic Latin. Compare — do they agree the surface gets dramatically less legible L0→L3?
 2. Critique the current proxy's weaknesses (e.g., L1 cryptic-ASCII scores same as L0). Propose the best single defensible metric.
-3. Also WRITE experiments/falsify/human_legibility_check.html — a tiny standalone page showing 6 programs (2 each L0/L2/L3, hardcode samples you generate) asking a human "what does this print?" + a guess box, so Pliny can run a real 5-person check. Report what metrics say + that a human check is the gold standard still needed.`},
+3. Also WRITE experiments/falsify/human_legibility_check.html — a tiny standalone page showing 6 programs (2 each L0/L2/L3, hardcode samples you generate) asking a human "what does this print?" + a guess box, so maintainers can run a real 5-person check. Report what metrics say + that a human check is the gold standard still needed.`},
   { id: 's4', label: 'S4 faithfulness-at-scale', prompt: `${API}
 
 PROBE S4 — Is the skin REALLY a faithful bijection (so "the machine runs it identically" is airtight), and is the contamination/identity control real? Write experiments/falsify/s4_faithful.mjs:

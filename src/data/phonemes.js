@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Phoneme Data
+ * HVRCRVX_LINGO - Phoneme Data
  * IPA consonants and vowels with cross-linguistic frequency data
  */
 

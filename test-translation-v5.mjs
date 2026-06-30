@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Translation Engine v5 Tests
+ * HVRCRVX_LINGO - Translation Engine v5 Tests
  * Tests: acronyms, proper nouns, semantic decomposition (calques),
  * list handling, technical jargon, and complex real-world text
  */
@@ -82,8 +82,8 @@ test("Multiple acronyms", () => {
 // Test Suite 2: Proper Nouns
 // ============================================
 console.log('\n--- 2. Proper Nouns ---');
-test("Simple proper noun (Pliny)", () => {
-  const r = translate("Pliny went to the mountain.");
+test("Simple proper noun (Aurelius)", () => {
+  const r = translate("Aurelius went to the mountain.");
   return r && r.target && !r.target.includes('[');
 });
 
@@ -196,12 +196,12 @@ test("Very technical paragraph", () => {
 });
 
 // ============================================
-// Test Suite 7: Pliny-style Text (User's Example)
+// Test Suite 7: Real-world instruction-like text
 // ============================================
 console.log('\n--- 7. Real-World Complex Text ---');
 
-test("Pliny-style instruction (simplified)", () => {
-  const text = "Make a document about Pliny. Include the AI work and the jailbreaks and the system prompts.";
+test("Instruction-style paragraph (simplified)", () => {
+  const text = "Make a document about language work. Include the AI work and the system prompts.";
   const r = showTranslation(text);
   return r && r.target && r.target.length > 20;
 });

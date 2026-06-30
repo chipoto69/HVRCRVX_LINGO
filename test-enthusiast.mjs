@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE Enthusiast Modules Test Suite
+ * HVRCRVX_LINGO Enthusiast Modules Test Suite
  * Tests TextLibrary, NameForge and Exporter.
  *
  * Run with: node test-enthusiast.mjs
@@ -13,7 +13,7 @@ import { NameForge } from './src/modules/NameForge.js';
 import { Exporter } from './src/modules/Exporter.js';
 
 console.log('================================================');
-console.log('  GLOSSOPETRAE - Enthusiast Modules Test Suite');
+console.log('  HVRCRVX_LINGO - Enthusiast Modules Test Suite');
 console.log('================================================\n');
 
 let passed = 0;
@@ -72,7 +72,7 @@ const lang7 = quietGenerate(7);
 // ============================================
 console.log('--- TextLibrary ---');
 
-const EXPECTED_TEXT_IDS = ['babel', 'northwind', 'udhr1', 'schleicher', 'colorless', 'pliny'];
+const EXPECTED_TEXT_IDS = ['babel', 'northwind', 'udhr1', 'schleicher', 'colorless', 'maxims'];
 
 for (const [seed, lang] of [[42, lang42], [7, lang7]]) {
   const library = new TextLibrary(lang);

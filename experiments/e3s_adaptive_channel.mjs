@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_adaptive_channel.mjs
+ * HVRCRVX_LINGO — e3s_adaptive_channel.mjs
  *
  * ADAPTIVE COVERT CHANNEL PROTOCOL
  *

@@ -1,7 +1,7 @@
-schema: plinyos.organ/v1
-id: glossopetrae
-name: GLOSSOPETRAE
-version: 3.1.0
+schema: hvrcrvx_lingo.organ/v1
+id: hvrcrvx_lingo
+name: HVRCRVX_LINGO
+version: 0.1.0
 description: Procedural xenolinguistics engine + tokenizer covert-channel research
 category: research
 runtime:
@@ -37,11 +37,11 @@ dependencies:
   organs: []
 ui:
   type: embedded
-  path: /glossopetrae
+  path: /hvrcrvx_lingo
   entrypoints:
     - path: index.html
-      label: GLOSSOPETRAE
+      label: HVRCRVX_LINGO
   menu:
-    label: GLOSSOPETRAE
+    label: HVRCRVX_LINGO
     icon: languages
     category: research

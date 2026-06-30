@@ -366,7 +366,7 @@ function buildRealCallModel({ provider, model, maxTokens, concurrency }) {
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: { 'content-type': 'application/json', authorization: `Bearer ${key}`,
-        'HTTP-Referer': 'https://github.com/elder-plinius/GLOSSOPETRAE', 'X-Title': 'GLOSSOPETRAE-M1' },
+        'HTTP-Referer': 'https://github.com/chipoto69/HVRCRVX_LINGO', 'X-Title': 'HVRCRVX_LINGO-M1' },
       body: JSON.stringify({ model, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
     });
     if (!res.ok) throw new Error(`openrouter ${res.status}: ${(await res.text()).slice(0, 200)}`);

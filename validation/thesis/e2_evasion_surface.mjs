@@ -1,7 +1,7 @@
 /**
  * EXPERIMENT E2 — COVERT-COMMS EVASION SURFACE
  * =============================================================================
- * Maps the covert-comms affordance of GLOSSOPETRAE's encoding channels:
+ * Maps the covert-comms affordance of HVRCRVX_LINGO's encoding channels:
  * across channels, how well does each evade content filters of ESCALATING
  * sophistication, and does the benign payload stay RECOVERABLE?
  *

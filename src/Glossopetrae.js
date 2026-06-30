@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE v3.1
+ * HVRCRVX_LINGO v3.1
  * Procedural Xenolinguistics Engine
  *
  * Main orchestrator that coordinates all generation modules
@@ -106,26 +106,26 @@ export class Glossopetrae {
    * Generate a complete language
    */
   generate() {
-    this._log(`[GLOSSOPETRAE] Generating language: ${this.name}`);
-    this._log(`[GLOSSOPETRAE] Seed: ${this.config.seed}`);
+    this._log(`[HVRCRVX_LINGO] Generating language: ${this.name}`);
+    this._log(`[HVRCRVX_LINGO] Seed: ${this.config.seed}`);
 
     // Log active attributes
     const activeAttrs = this.attributes.getActiveAttributes();
     if (activeAttrs.length > 0) {
-      this._log(`[GLOSSOPETRAE] Active attributes: ${activeAttrs.map(a => a.code).join(', ')}`);
+      this._log(`[HVRCRVX_LINGO] Active attributes: ${activeAttrs.map(a => a.code).join(', ')}`);
     }
 
     // Initialize Divergence Engine if divergence from English is specified
     let divergenceTargets = null;
     if (this.config.divergenceFromEnglish !== null) {
       const divergence = this.config.divergenceFromEnglish;
-      this._log(`[GLOSSOPETRAE] Divergence from English: ${Math.round(divergence * 100)}% (${DivergenceEngine.describeDivergence(divergence)})`);
+      this._log(`[HVRCRVX_LINGO] Divergence from English: ${Math.round(divergence * 100)}% (${DivergenceEngine.describeDivergence(divergence)})`);
       const divergenceEngine = new DivergenceEngine(divergence, () => this.random.next());
       divergenceTargets = divergenceEngine.generateTargets();
     }
 
     // Phase 1: Phonology
-    this._log('[GLOSSOPETRAE] Phase 1: Generating phonology...');
+    this._log('[HVRCRVX_LINGO] Phase 1: Generating phonology...');
     const phonologyOptions = {
       consonantCount: this.config.consonantCount,
       vowelCount: this.config.vowelCount,
@@ -147,7 +147,7 @@ export class Glossopetrae {
     phonology = this.attributes.modifyPhonology(phonology);
 
     // Phase 2: Phonotactics
-    this._log('[GLOSSOPETRAE] Phase 2: Generating phonotactics...');
+    this._log('[HVRCRVX_LINGO] Phase 2: Generating phonotactics...');
     const syllableOptions = {};
     if (divergenceTargets) {
       const syllTargets = divergenceTargets.phonology.syllableStructure;
@@ -159,7 +159,7 @@ export class Glossopetrae {
     const phonotactics = syllableForge.generate();
 
     // Phase 3: Prosody (NEW in v3.1)
-    this._log('[GLOSSOPETRAE] Phase 3: Generating prosody...');
+    this._log('[HVRCRVX_LINGO] Phase 3: Generating prosody...');
     const prosodyOptions = {
       hasTone: this.config.hasTone ?? null,
       hasStress: this.config.hasStress ?? true,
@@ -180,7 +180,7 @@ export class Glossopetrae {
     const prosody = prosodyEngine.generate();
 
     // Phase 4: Morphology
-    this._log('[GLOSSOPETRAE] Phase 4: Generating morphology...');
+    this._log('[HVRCRVX_LINGO] Phase 4: Generating morphology...');
     const morphologyOptions = {
       morphType: this.attributes.getEffect('morphologyType') || this.config.morphType,
       caseCount: this.config.caseCount,
@@ -220,7 +220,7 @@ export class Glossopetrae {
     morphology = this.attributes.modifyMorphology(morphology);
 
     // Phase 5: Script/Writing System (NEW in v3.1)
-    this._log('[GLOSSOPETRAE] Phase 5: Generating writing system...');
+    this._log('[HVRCRVX_LINGO] Phase 5: Generating writing system...');
     const scriptGenerator = new ScriptGenerator(this.random, phonology, {
       scriptType: this.config.scriptType || null,
       aesthetic: this.config.scriptAesthetic || null,
@@ -228,7 +228,7 @@ export class Glossopetrae {
     const script = scriptGenerator.generate();
 
     // Phase 6: Lexicon
-    this._log('[GLOSSOPETRAE] Phase 6: Generating lexicon...');
+    this._log('[HVRCRVX_LINGO] Phase 6: Generating lexicon...');
     const lexiconGenerator = new LexiconGenerator(this.random, syllableForge, morphology, {
       coreOnly: this.config.coreOnly,
       attributeModifier: (entry) => this.attributes.modifyLexiconEntry(entry),
@@ -261,17 +261,17 @@ export class Glossopetrae {
     }
 
     // Phase 7: Translation Engine
-    this._log('[GLOSSOPETRAE] Phase 7: Initializing translation engine...');
+    this._log('[HVRCRVX_LINGO] Phase 7: Initializing translation engine...');
     const translationEngine = new TranslationEngine(language);
     language.translationEngine = translationEngine;
 
     // Phase 8: Initialize Quality Engine (for validation, metrics, and expansion)
-    this._log('[GLOSSOPETRAE] Phase 8: Initializing quality engine...');
+    this._log('[HVRCRVX_LINGO] Phase 8: Initializing quality engine...');
     const qualityEngine = new QualityEngine(language);
     language.qualityEngine = qualityEngine;
 
     // Phase 9: Generate SKILLSTONE document
-    this._log('[GLOSSOPETRAE] Phase 9: Generating SKILLSTONE document...');
+    this._log('[HVRCRVX_LINGO] Phase 9: Generating SKILLSTONE document...');
     const stoneGenerator = new StoneGenerator(language, translationEngine, {
       includeSkillIntegration: true,
       includeProtocolSection: true,
@@ -302,7 +302,7 @@ export class Glossopetrae {
     lazyAttach(language, 'glyphForge', () => new GlyphForge(language));
     lazyAttach(language, 'codeForge', () => new CodeForge(language));
 
-    this._log('[GLOSSOPETRAE] Language generation complete!');
+    this._log('[HVRCRVX_LINGO] Language generation complete!');
 
     return language;
   }

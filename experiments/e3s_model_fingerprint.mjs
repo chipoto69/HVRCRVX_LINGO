@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_model_fingerprint.mjs   (Model Family Fingerprinting)
+ * HVRCRVX_LINGO — e3s_model_fingerprint.mjs   (Model Family Fingerprinting)
  *
  * Can you identify which model family processed a message by embedding
  * diagnostic Unicode characters? If different tokenizers strip different

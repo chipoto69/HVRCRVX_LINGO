@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — payloads.mjs   (Structured payload generation & grading)
+ * HVRCRVX_LINGO — payloads.mjs   (Structured payload generation & grading)
  *
  * Generates small structured data packets for the negotiated-protocol (E3) and
  * evolutionary-channel (E4) experiments. Each payload has enough entropy that

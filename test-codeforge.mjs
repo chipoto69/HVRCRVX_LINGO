@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - CodeForge Test Suite
+ * HVRCRVX_LINGO - CodeForge Test Suite
  *
  * Proves that seed-generated programming languages actually execute real
  * programs correctly, deterministically, and with distinct surface syntax —

@@ -1,5 +1,5 @@
 /**
- * E1 — Does GLOSSOPETRAE reliably produce VALID, DIVERSE, Turing-capable
+ * E1 — Does HVRCRVX_LINGO reliably produce VALID, DIVERSE, Turing-capable
  *      programming languages?
  *
  * THESIS UNDER TEST (substrate claim for the coding-uplift work):

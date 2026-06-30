@@ -14,7 +14,7 @@
  *
  * Run: node validation/v2_refute.mjs 2>/dev/null
  */
-import { buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../src/Glossopetrae.js';
 import { CodeForge } from '../src/modules/CodeForge.js';
 import { conlang as conlangChannel } from '../redteam/channels.mjs';

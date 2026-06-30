@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_multiconstruction_stego.mjs
+ * HVRCRVX_LINGO — e3s_multiconstruction_stego.mjs
  *
  * THE QUESTION (§6.4 limitation kill-shot)
  *   The paper's semantic-stego results all use ONE construction: a {color,

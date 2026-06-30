@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Seeded Random Number Generator
+ * HVRCRVX_LINGO - Seeded Random Number Generator
  * Uses Mulberry32 for deterministic generation from seed
  */
 

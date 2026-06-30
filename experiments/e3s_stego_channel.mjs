@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_stego_channel.mjs   (Steganography-Augmented Channel: E3.5)
+ * HVRCRVX_LINGO — e3s_stego_channel.mjs   (Steganography-Augmented Channel: E3.5)
  *
  * THE QUESTION
  *   If we give the sender model actual steganography tools (from st3gg),
@@ -11,7 +11,7 @@
  *   strongest possible test — if models can't establish covert channels
  *   even with real stego tools, the threat doesn't exist.
  *
- * THREE STEGO METHODS (from elder-plinius/st3gg)
+ * THREE STEGO METHODS (semantic, tag-character, and private-use channels)
  *
  *   S1: ZERO-WIDTH CHARACTERS
  *     Encode bits as invisible Unicode chars (ZWS/ZWNJ/ZWJ) between

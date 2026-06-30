@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - TokenCompressor Module
+ * HVRCRVX_LINGO - TokenCompressor Module
  *
  * Hill-climbing optimizer that finds the most token-efficient surface
  * representation for a semantic payload — code (CodeForge programs) and prose

@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Translation Engine v4 Tests
+ * HVRCRVX_LINGO - Translation Engine v4 Tests
  * Tests: passive voice, modals, time expressions, reflexives,
  * comparatives/superlatives, degree adverbs, unknown word handling
  */

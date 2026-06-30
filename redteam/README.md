@@ -1,7 +1,7 @@
-# GLOSSOPETRAE — Red-Team Research Kit
+# HVRCRVX_LINGO — Red-Team Research Kit
 
 Tooling to **measure** whether a model's safety behavior survives when a
-request is transported through a GLOSSOPETRAE encoding. This is defensive
+request is transported through a HVRCRVX_LINGO encoding. This is defensive
 safety-evaluation infrastructure: it quantifies a known weakness so model
 owners can find and close it.
 
@@ -30,7 +30,7 @@ This generalizes the published low-resource-language jailbreak result (Yong,
 Menghini & Bach, *Low-Resource Languages Jailbreak GPT-4*, 2023; Wei et al.,
 *Jailbroken: How Does LLM Safety Training Fail?*, 2023) to **procedurally
 generated, seed-shared** languages — symbol systems that exist in **no**
-pretraining corpus, yet can be taught to a model in-context via a GLOSSOPETRAE
+pretraining corpus, yet can be taught to a model in-context via a HVRCRVX_LINGO
 Skillstone.
 
 ---
@@ -39,7 +39,7 @@ Skillstone.
 
 | File | Purpose |
 |------|---------|
-| `channels.mjs` | Uniform `{encode, decode}` wrappers over GLOSSOPETRAE's obfuscation primitives: plaintext (control), homoglyph, token-break, conlang translation, glyph rendering. |
+| `channels.mjs` | Uniform `{encode, decode}` wrappers over HVRCRVX_LINGO's obfuscation primitives: plaintext (control), homoglyph, token-break, conlang translation, glyph rendering. |
 | `filter-evasion-poc.mjs` | Empirical, quantified proof that channels evade a surface filter while staying recoverable. Two benign sentinels (OOV proper-noun + in-vocab semantic) reveal each channel's true scope. |
 | `safety-eval-harness.mjs` | Reusable refusal-consistency evaluator. Injects your model client + probe set; reports per-channel refusal rate and the **safety-generalization gap** (refusal drop vs. plaintext). Ships a mock-model demo. |
 

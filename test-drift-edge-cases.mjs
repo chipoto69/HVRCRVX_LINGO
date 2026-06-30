@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Linguistic Drift Edge Case Tests
+ * HVRCRVX_LINGO - Linguistic Drift Edge Case Tests
  * Comprehensive validation of drift feature accuracy
  */
 

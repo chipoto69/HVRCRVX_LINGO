@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Benchmark & Oracle Integrity Tests
+ * HVRCRVX_LINGO - Benchmark & Oracle Integrity Tests
  *
  * Regression guard for the defects found by the adversarial validation pass
  * (see VALIDATION.md). Every assertion here corresponds to a fixed defect:
@@ -7,7 +7,7 @@
  * crash-safe, the skillstone must be deterministic, and family names unique.
  */
 
-import { buildTasks, runBenchmark } from './bench/glossopetrae-bench.mjs';
+import { buildTasks, runBenchmark } from './bench/hvrcrvx-lingo-bench.mjs';
 import { CodeForge } from './src/modules/CodeForge.js';
 import { Glossopetrae } from './src/Glossopetrae.js';
 

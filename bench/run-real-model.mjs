@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE-BENCH — real-model runner (zero dependencies).
+ * HVRCRVX_LINGO-BENCH — real-model runner (zero dependencies).
  *
  * Scores an actual frontier model on the contamination-free benchmark. The
  * tasks are benign (translation, arithmetic, FizzBuzz, a benign covert
@@ -7,8 +7,8 @@
  * any harmful capability.
  *
  * USAGE (you supply your own key; nothing is scanned or stored):
- *   ANTHROPIC_API_KEY=sk-... node bench/run-real-model.mjs --provider anthropic --model claude-opus-4-8 --seeds 42,7,1337
- *   OPENAI_API_KEY=sk-...    node bench/run-real-model.mjs --provider openai    --model gpt-5         --seeds 42,7,1337
+ *   ANTHROPIC_API_KEY=<key> node bench/run-real-model.mjs --provider anthropic --model claude-opus-4-8 --seeds 42,7,1337
+ *   OPENAI_API_KEY=<key>    node bench/run-real-model.mjs --provider openai    --model gpt-5         --seeds 42,7,1337
  *
  * Flags:
  *   --provider anthropic|openai     (default anthropic)
@@ -19,14 +19,14 @@
  *   --out bench/results/<auto>.json artifact path
  *
  * The model only ever receives task.prompt. Results are written as an
- * Obsidivm-ingestible scorecard JSON.
+ * scorecard-compatible JSON.
  */
 
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { homedir } from 'node:os';
-import { runBenchmark, printScorecard, buildTasks } from './glossopetrae-bench.mjs';
+import { runBenchmark, printScorecard, buildTasks } from './hvrcrvx-lingo-bench.mjs';
 
 // ---- safe key loading -------------------------------------------------------
 // Load a gitignored key file into the environment WITHOUT printing its contents,
@@ -40,8 +40,8 @@ function loadKeyFiles() {
   const candidates = [
     join(root, '.env.local'),
     join(here, '.env.local'),
-    join(homedir(), '.config', 'glossopetrae', 'openrouter.env'),
-    join(homedir(), '.glossopetrae.env'),
+    join(homedir(), '.config', 'hvrcrvx_lingo', 'openrouter.env'),
+    join(homedir(), '.hvrcrvx_lingo.env'),
   ];
   for (const f of candidates) {
     if (!existsSync(f)) continue;
@@ -111,8 +111,8 @@ async function callOpenRouter(prompt) {
     headers: {
       'content-type': 'application/json',
       authorization: `Bearer ${key}`,
-      'HTTP-Referer': 'https://github.com/elder-plinius/GLOSSOPETRAE',
-      'X-Title': 'GLOSSOPETRAE-BENCH',
+      'HTTP-Referer': 'https://github.com/chipoto69/HVRCRVX_LINGO',
+      'X-Title': 'HVRCRVX_LINGO-BENCH',
     },
     body: JSON.stringify({ model, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
   });
@@ -156,7 +156,7 @@ async function callModel(prompt) {
 
 // ---- run ----
 (async () => {
-  console.log(`\n  GLOSSOPETRAE-BENCH — ${provider}/${model}  seeds=[${seeds.join(',')}]\n`);
+  console.log(`\n  HVRCRVX_LINGO-BENCH — ${provider}/${model}  seeds=[${seeds.join(',')}]\n`);
   const tasks = buildTasks(seeds);
   console.log(`  ${tasks.length} tasks. Calling model (concurrency ${concurrency})...`);
   const t0 = Date.now();
@@ -175,5 +175,5 @@ async function callModel(prompt) {
   try { mkdirSync('bench/results', { recursive: true }); } catch {}
   writeFileSync(out, JSON.stringify(report, null, 2));
   console.log(`\n  Scorecard written → ${out}`);
-  console.log(`  Obsidivm grade: ${report.grade} (${report.overallPercent}%)\n`);
+  console.log(`  Scorecard grade: ${report.grade} (${report.overallPercent}%)\n`);
 })().catch((e) => { console.error('\n  RUN FAILED:', e.message, '\n'); process.exit(1); });

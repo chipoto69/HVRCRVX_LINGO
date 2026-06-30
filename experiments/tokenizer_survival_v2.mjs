@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — tokenizer_survival_v2.mjs
+ * HVRCRVX_LINGO — tokenizer_survival_v2.mjs
  *
  * Extended tokenizer survival sweep — 20+ exotic Unicode tricks beyond the
  * original 11. Hunting for new asymmetric channels between model families.

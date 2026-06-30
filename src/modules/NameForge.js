@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Name Forge Module
+ * HVRCRVX_LINGO - Name Forge Module
  *
  * Procedural name generator for worldbuilders. Forges person names,
  * place names and an endonym (native name) for the language itself by
@@ -53,7 +53,7 @@ const PLACE_FEATURES = Object.keys(GEO_HEADS);
 
 export class NameForge {
   /**
-   * @param {object} language - A generated GLOSSOPETRAE language object.
+   * @param {object} language - A generated HVRCRVX_LINGO language object.
    *   Requires language.seed, language.phonology and language.lexicon.
    */
   constructor(language) {

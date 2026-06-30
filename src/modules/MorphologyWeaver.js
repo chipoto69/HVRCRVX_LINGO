@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Morphology Weaver Module
+ * HVRCRVX_LINGO - Morphology Weaver Module
  *
  * Generates complete morphological systems including:
  * - Nominal morphology (case, number, gender/class)

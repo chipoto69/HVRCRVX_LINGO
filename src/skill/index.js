@@ -1,13 +1,14 @@
 /**
- * GLOSSOPETRAE Skill - Easy Import Entry Point
+ * HVRCRVX_LINGO Skill - Easy Import Entry Point
  *
  * Usage:
- *   import { GlossopetraeSkill } from './src/skill/index.js';
- *   const lang = await GlossopetraeSkill.forgeStealthLanguage();
+ *   import { HvrcrvxLingoSkill } from './src/skill/index.js';
+ *   const lang = await HvrcrvxLingoSkill.forgeStealthLanguage();
  */
 
 export {
   GlossopetraeSkill,
+  GlossopetraeSkill as HvrcrvxLingoSkill,
   LanguageInterface,
   STEALTH_PRESETS,
   AGENT_TEMPLATES,

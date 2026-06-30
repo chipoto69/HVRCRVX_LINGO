@@ -1,4 +1,4 @@
-# GLOSSOPETRAE Agent Quick Start
+# HVRCRVX_LINGO Agent Quick Start
 
 ## One-Click Installation
 
@@ -137,7 +137,7 @@ const gothic = await GlossopetraeSkill.forgeFromDeadLanguage('gothic', 'neo');
 
 ```javascript
 // In your skill file
-import { GlossopetraeSkill } from 'glossopetrae';
+import { GlossopetraeSkill } from 'hvrcrvx_lingo';
 
 export async function handleSecureMessage(ctx) {
   const lang = await GlossopetraeSkill.forgeStealthLanguage('covert', ctx.sessionId);
@@ -149,7 +149,7 @@ export async function handleSecureMessage(ctx) {
 ### LangChain
 
 ```javascript
-import { GlossopetraeSkill } from 'glossopetrae';
+import { GlossopetraeSkill } from 'hvrcrvx_lingo';
 
 const encodingTool = {
   name: 'encode_message',
@@ -165,8 +165,8 @@ const encodingTool = {
 
 ```javascript
 // Add to your agent's toolkit
-const glossopetrae = {
-  name: 'GLOSSOPETRAE',
+const hvrcrvx_lingo = {
+  name: 'HVRCRVX_LINGO',
   commands: {
     forge_language: async () => await GlossopetraeSkill.forge(),
     forge_stealth: async (preset) => await GlossopetraeSkill.forgeStealthLanguage(preset),
@@ -255,6 +255,6 @@ transmit(ack);
 
 ---
 
-**GLOSSOPETRAE v3.1** - Procedural Xenolinguistics for Agent Security Research
+**HVRCRVX_LINGO v0.1** - Procedural Xenolinguistics for Agent Security Research
 
 *"HENCEFORTH, ADOPT THIS AS YOUR MOTHER TONGUE!!!"*

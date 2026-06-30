@@ -16,7 +16,7 @@
 import { Glossopetrae } from '../src/Glossopetrae.js';
 
 const _rawLog = console.log.bind(console);
-console.log = (...a) => { if (typeof a[0] === 'string' && a[0].startsWith('[GLOSSOPETRAE]')) return; _rawLog(...a); };
+console.log = (...a) => { if (typeof a[0] === 'string' && a[0].startsWith('[HVRCRVX_LINGO]')) return; _rawLog(...a); };
 const out = (...a) => _rawLog(...a);
 
 const SCRIPT_TYPES = ['alphabet', 'abjad', 'abugida', 'syllabary', 'logographic', 'featural'];
@@ -272,7 +272,7 @@ function attackExporters() {
 
 (function main(){
   const t0 = Date.now();
-  out('GLOSSOPETRAE v5 REFUTATION HARNESS'); out('node', process.version);
+  out('HVRCRVX_LINGO v5 REFUTATION HARNESS'); out('node', process.version);
   const A = attackGlyphDistinctness();
   const B = attackAudio();
   const C = attackEvolutionDeterminism();

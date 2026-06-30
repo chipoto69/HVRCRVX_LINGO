@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Syllable Forge Module
+ * HVRCRVX_LINGO - Syllable Forge Module
  *
  * Generates syllable structure constraints and phonotactic rules
  * respecting sonority sequencing and cross-linguistic patterns.

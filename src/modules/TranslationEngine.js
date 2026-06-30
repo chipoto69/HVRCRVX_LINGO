@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Translation Engine Module
+ * HVRCRVX_LINGO - Translation Engine Module
  *
  * Rule-based machine translation between English and the generated language.
  * Generates interlinear glosses and worked examples.

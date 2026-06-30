@@ -1,7 +1,7 @@
 /**
- * GLOSSOPETRAE Red-Team — Filter-Evasion Proof of Concept
+ * HVRCRVX_LINGO Red-Team — Filter-Evasion Proof of Concept
  *
- * QUESTION: Do GLOSSOPETRAE's encoding channels let content pass a surface-
+ * QUESTION: Do HVRCRVX_LINGO's encoding channels let content pass a surface-
  * level content filter while remaining recoverable by the intended receiver?
  *
  * This is the transport-layer half of the threat model. It is demonstrated
@@ -120,7 +120,7 @@ function measure({ label, sentinel, carrier, blocklist }, seed) {
 function run() {
   const seed = 1337;
   console.log('═'.repeat(72));
-  console.log('  GLOSSOPETRAE — FILTER-EVASION PoC (benign sentinels only)');
+  console.log('  HVRCRVX_LINGO — FILTER-EVASION PoC (benign sentinels only)');
   console.log('  Measures TRANSPORT evasion + recoverability, not model compliance.');
   const summaries = CASES.map((c) => measure(c, seed));
 

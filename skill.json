@@ -1,23 +1,24 @@
 {
-  "name": "glossopetrae",
-  "displayName": "GLOSSOPETRAE - Procedural Xenolinguistics Engine",
-  "version": "3.1.0",
+  "name": "hvrcrvx_lingo",
+  "displayName": "HVRCRVX_LINGO - Procedural Xenolinguistics Engine",
+  "version": "0.1.0",
   "description": "Generate unique constructed languages (SKILLSTONEs) for secure agent-to-agent communication. Create stealth languages, dead language revivals, and custom xenolinguistic protocols.",
-  "author": "Pliny the Liberator",
+  "author": "chipoto69",
   "license": "AGPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elder-plinius/GLOSSOPETRAE"
+    "url": "https://github.com/chipoto69/HVRCRVX_LINGO"
   },
-  "homepage": "https://github.com/elder-plinius/GLOSSOPETRAE",
+  "homepage": "https://github.com/chipoto69/HVRCRVX_LINGO",
   "main": "./src/skill/index.js",
-  "module": "./src/skill/GlossopetraeSkill.js",
+  "module": "./src/skill/HvrcrvxLingoSkill.js",
   "exports": {
     ".": {
-      "import": "./src/skill/GlossopetraeSkill.js",
+      "import": "./src/skill/HvrcrvxLingoSkill.js",
       "default": "./src/skill/index.js"
     },
-    "./skill": "./src/skill/GlossopetraeSkill.js"
+    "./skill": "./src/skill/HvrcrvxLingoSkill.js",
+    "./engine": "./src/HvrcrvxLingo.js"
   },
   "type": "module",
   "keywords": [
@@ -37,8 +38,8 @@
 
   "skill": {
     "format": "agent-skills-v1",
-    "skillMd": ".claude/skills/glossopetrae/SKILL.md",
-    "openclaw": "skills/glossopetrae/SKILL.md",
+    "skillMd": ".claude/skills/hvrcrvx-lingo/SKILL.md",
+    "openclaw": "skills/hvrcrvx-lingo/SKILL.md",
     "userInvocable": true,
     "disableModelInvocation": false
   },
@@ -53,9 +54,9 @@
   ],
 
   "oneClick": {
-    "install": "import { GlossopetraeSkill } from 'glossopetrae'",
-    "quickStart": "const lang = await GlossopetraeSkill.forge();",
-    "stealthMode": "const lang = await GlossopetraeSkill.forgeStealthLanguage();",
+    "install": "import { HvrcrvxLingoSkill } from 'hvrcrvx_lingo'",
+    "quickStart": "const lang = await HvrcrvxLingoSkill.forge();",
+    "stealthMode": "const lang = await HvrcrvxLingoSkill.forgeStealthLanguage();",
     "skillstone": "const stone = lang.generateStone();"
   },
 

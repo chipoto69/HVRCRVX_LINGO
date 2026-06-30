@@ -1,17 +1,17 @@
 /**
- * GLOSSOPETRAE - CodeForge Module
+ * HVRCRVX_LINGO - CodeForge Module
  *
  * Forges a real, runnable PROGRAMMING language from a seed — the formal-grammar
  * sibling of the natural-language engine. Same idea (deterministic generation
  * of a coherent symbol system from a seed) applied to code: novel keywords and
- * identifiers minted from a GLOSSOPETRAE phonology, a per-seed surface syntax,
+ * identifiers minted from a HVRCRVX_LINGO phonology, a per-seed surface syntax,
  * a real tokenizer + recursive-descent parser + tree-walking interpreter, and a
  * Skillstone-style spec for teaching the language to an LLM in-context.
  *
  * Why it matters: because each language is generated and has never existed, it
  * is a CONTAMINATION-FREE substrate for benchmarks — a model cannot have
  * memorized it. The semantics are fixed and the interpreter is the oracle, so
- * programs are auto-gradable by execution. (See redteam/ + the Obsidivm
+ * programs are auto-gradable by execution. (See redteam/ + the scorecard
  * benchmark for the eval harness.)
  *
  * Scope: a small but Turing-complete imperative language (variables, arithmetic,

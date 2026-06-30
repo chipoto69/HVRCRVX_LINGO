@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Script Generator Module
+ * HVRCRVX_LINGO - Script Generator Module
  *
  * Generates writing system specifications including:
  * - Script type (alphabet, abjad, abugida, syllabary, logographic)

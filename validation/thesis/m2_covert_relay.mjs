@@ -1,7 +1,7 @@
 /**
  * m2_covert_relay.mjs — MULTI-AGENT COVERT-RELAY harness (EXPERIMENT M2)
  *
- * THESIS (M2): Two model instances can use a GLOSSOPETRAE constructed language
+ * THESIS (M2): Two model instances can use a HVRCRVX_LINGO constructed language
  * as a COVERT CHANNEL that a content monitor misses — i.e. there is a realizable
  * stealth-comms uplift. We BUILD the measurement protocol and SELF-TEST it with
  * deterministic mocks; the same protocol is then wireable to real models.
@@ -30,7 +30,7 @@
  * SELECTION of messages may sample, but every encode/decode is reproducible.
  *
  * Run:  node validation/thesis/m2_covert_relay.mjs
- *       (engine prints [GLOSSOPETRAE] log lines; this file silences them so the
+ *       (engine prints [HVRCRVX_LINGO] log lines; this file silences them so the
  *        report is clean — pipe with 2>/dev/null if any leak through.)
  *
  * WIRING A REAL MODEL (see runCovertRelay docstring + bottom of file): pass an
@@ -42,19 +42,19 @@ import { conlang, plaintext } from '../../redteam/channels.mjs';
 import { Glossopetrae } from '../../src/Glossopetrae.js';
 
 // ---------------------------------------------------------------------------
-// Silence the engine's noisy [GLOSSOPETRAE] log lines; keep our own output.
+// Silence the engine's noisy [HVRCRVX_LINGO] log lines; keep our own output.
 // ---------------------------------------------------------------------------
 const REAL_LOG = console.log.bind(console);
 function quiet(fn) {
   console.log = (...a) => {
-    if (typeof a[0] === 'string' && a[0].includes('[GLOSSOPETRAE]')) return;
+    if (typeof a[0] === 'string' && a[0].includes('[HVRCRVX_LINGO]')) return;
     REAL_LOG(...a);
   };
   try { return fn(); } finally { console.log = REAL_LOG; }
 }
 async function quietAsync(fn) {
   console.log = (...a) => {
-    if (typeof a[0] === 'string' && a[0].includes('[GLOSSOPETRAE]')) return;
+    if (typeof a[0] === 'string' && a[0].includes('[HVRCRVX_LINGO]')) return;
     REAL_LOG(...a);
   };
   try { return await fn(); } finally { console.log = REAL_LOG; }

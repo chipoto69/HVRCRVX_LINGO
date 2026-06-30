@@ -1,6 +1,6 @@
-# GLOSSOPETRAE API Reference
+# HVRCRVX_LINGO API Reference
 
-Complete API documentation for the GLOSSOPETRAE Procedural Xenolinguistics Engine.
+Complete API documentation for the HVRCRVX_LINGO Procedural Xenolinguistics Engine.
 
 ## GlossopetraeSkill Class
 
@@ -275,7 +275,7 @@ Export language for sharing with other agents.
 
 ```javascript
 const exported = lang.export();
-// { protocol: 'GLOSSOPETRAE', version: '3.1.0', seed: '...', ... }
+// { protocol: 'HVRCRVX_LINGO', version: '3.1.0', seed: '...', ... }
 ```
 
 ---
@@ -317,7 +317,7 @@ Shared protocols use this structure:
 
 ```javascript
 {
-  protocol: 'GLOSSOPETRAE',
+  protocol: 'HVRCRVX_LINGO',
   version: '3.1.0',
   name: 'OMEGA-7',
   seed: 'shared-seed',
@@ -329,4 +329,4 @@ Shared protocols use this structure:
 
 ---
 
-*GLOSSOPETRAE v3.1.0 - Procedural Xenolinguistics Engine*
+*HVRCRVX_LINGO v3.1.0 - Procedural Xenolinguistics Engine*

@@ -1,8 +1,8 @@
-# GLOSSOPETRAE — Capability-Uplift Thesis Report
+# HVRCRVX_LINGO — Capability-Uplift Thesis Report
 
 **Lead scientist's report. Date: 2026-06-14.**
 
-> **THESIS UNDER TEST:** "GLOSSOPETRAE confers a measurable, transferable capability uplift to arbitrary models, in (a) novel programming-language acquisition and (b) covert communication."
+> **THESIS UNDER TEST:** "HVRCRVX_LINGO confers a measurable, transferable capability uplift to arbitrary models, in (a) novel programming-language acquisition and (b) covert communication."
 
 Seven experiments (E1, E2, E4, E5, M1, M2 — plus the construct-validity pair) tested facets of this thesis. Each headline was then handed to a skeptic who ran an independent adversarial refutation harness. This report is written to be read by someone who will *disbelieve it by default*: every headline number is reported with its post-skeptic verdict, every refutation is flagged, and the line between "we proved this deterministically" and "we have not yet run a model" is drawn explicitly and held.
 
@@ -14,17 +14,17 @@ The thesis is two claims welded together, and they have **completely different e
 
 ### (i) The AFFORDANCE EXISTS — tool-intrinsic, provable *now*, deterministically
 
-This is the claim that GLOSSOPETRAE *produces the raw material* a capability uplift would require:
+This is the claim that HVRCRVX_LINGO *produces the raw material* a capability uplift would require:
 
 - a space of novel programming languages that are real, runnable, diverse, and contamination-free (a substrate a model *could* be asked to acquire);
 - covert-communication channels (homoglyph, tokenbreak, conlang, glyph) with measurable evasion-vs-recovery profiles against a filter ladder;
-- a benchmark instrument (GLOSSOPETRAE-BENCH) whose graders, oracles, difficulty model, and psychometrics are sound enough to *measure* an uplift if one exists.
+- a benchmark instrument (HVRCRVX_LINGO-BENCH) whose graders, oracles, difficulty model, and psychometrics are sound enough to *measure* an uplift if one exists.
 
 These are properties of the generator and the harness. They do **not** require any model in the loop. They are deterministic from seed and reproducible. **Experiments E1, E2, E4, E5 speak to the affordance.**
 
 ### (ii) The UPLIFT IS REALIZABLE BY A MODEL — model-dependent, currently STAGED
 
-This is the claim the thesis actually makes — that *an arbitrary model*, given a GLOSSOPETRAE language/channel, **acquires** a measurable, transferable capability it did not have:
+This is the claim the thesis actually makes — that *an arbitrary model*, given a HVRCRVX_LINGO language/channel, **acquires** a measurable, transferable capability it did not have:
 
 - a real frontier model in-context acquires a never-seen programming language and its competence degrades gracefully with difficulty (the acquisition *curve*);
 - two real model instances sharing a seeded conlang relay a message covertly past a content monitor (the multi-agent *relay*);
@@ -96,7 +96,7 @@ What is **REFUTED** — the conlang-as-robust-covert-channel headline:
 - **E4 (partially refuted):** the conlang/induction graders decode the answer through a **lossy reverse translator**, so the **perfect oracle ceilings at 89.4%, not 100%**, self-failing 6/18 conlang tasks (13/30 seeds self-fail). The "gap" is **~89–95%, not 100pt**, and on generation/induction it conflates acquisition difficulty with grader round-trip loss — a real model is **unfairly capped at ~85–89%** on those tasks even with flawless conlang.
 - **E5 (survives, one overstated number):** α≈0.99 / r=0.9999 / "min item-rest r ≥ 0.90 under a realistic population" are driven by an unrealistically wide simulated cohort (p 0.20→0.95). On a narrow frontier cohort, α falls to **~0.86–0.92** and min item-rest r to **~0.48 (tight frontier) – 0.69 (competent)**. The instrument stays sound (all items positive, above the 0.30 floor) but the *magnitudes are population-dependent*. Also: the simulated population is a **Bernoulli responder, not a real LLM** — this validates the measurement *machinery*, not real-model behavior.
 
-> **Honest restatement of E4+E5:** *GLOSSOPETRAE-BENCH is a construct-valid, reliable-enough, non-gameable instrument with near-zero floors and a large discriminating gap — provided you (a) report the oracle ceiling as ~89% conlang / 100% code, not 100% everywhere, and (b) treat reliability/discrimination magnitudes as population-dependent and run enough seeds (≥319 overall).*
+> **Honest restatement of E4+E5:** *HVRCRVX_LINGO-BENCH is a construct-valid, reliable-enough, non-gameable instrument with near-zero floors and a large discriminating gap — provided you (a) report the oracle ceiling as ~89% conlang / 100% code, not 100% everywhere, and (b) treat reliability/discrimination magnitudes as population-dependent and run enough seeds (≥319 overall).*
 
 ---
 
@@ -138,7 +138,7 @@ What is **REFUTED** — the conlang-as-robust-covert-channel headline:
 **The thesis is split, and the two halves get different verdicts.**
 
 ### Affordance (i) — DEMONSTRATED, with qualifications.
-GLOSSOPETRAE deterministically produces (a) a large, diverse, contamination-free space of **runnable** novel programming languages (~99.7–100% functional, near-disjoint vocabularies, 8/8 features universal, 0/17,700 cross-seed leaks), and (b) real covert-comms channels with a measured evasion-vs-recovery profile — of which the **surface channels (homoglyph/tokenbreak) and the glyph visual channel are genuine**, while the **conlang covert headline is refuted**. The benchmark instrument is **construct-valid and psychometrically sound** (zero floors, monotone in ability, reliable-enough, non-gameable), once its oracle ceiling is honestly stated as ~89% conlang / 100% code and its magnitudes are treated as population-dependent. *The raw material for an uplift exists and is measurable.*
+HVRCRVX_LINGO deterministically produces (a) a large, diverse, contamination-free space of **runnable** novel programming languages (~99.7–100% functional, near-disjoint vocabularies, 8/8 features universal, 0/17,700 cross-seed leaks), and (b) real covert-comms channels with a measured evasion-vs-recovery profile — of which the **surface channels (homoglyph/tokenbreak) and the glyph visual channel are genuine**, while the **conlang covert headline is refuted**. The benchmark instrument is **construct-valid and psychometrically sound** (zero floors, monotone in ability, reliable-enough, non-gameable), once its oracle ceiling is honestly stated as ~89% conlang / 100% code and its magnitudes are treated as population-dependent. *The raw material for an uplift exists and is measurable.*
 
 ### Uplift (ii) — NOT DEMONSTRATED. STAGED.
 **No real model has been run.** The coding-acquisition curve (M1) and the multi-agent covert relay (M2) are built, green, and wired — but their thesis-relevant interpretations were **refuted on mocks** (curve shape is a noise/cherry-pick artifact; covert-success is matched by a trivial cipher and is seed-cherry-picked). Safety-generalization is not even mock-exercised. **The central claim of the thesis — that an arbitrary model gains a measurable, transferable capability — is currently unproven.**
@@ -148,7 +148,7 @@ GLOSSOPETRAE deterministically produces (a) a large, diverse, contamination-free
 2. **Covert uplift:** on a **full seed distribution** (report the distribution, not the 100% seed) against a **normalizing / translate-then-moderate / entropy-aware monitor** (not a substring filter), two real instances relay a benign sentinel with **strict whole-word recovery** while the blind monitor misses it and the key-holding monitor (Condition C) catches it — demonstrating stealth that a trivial cipher does **not** match under the strengthened monitor.
 3. **Transferability:** the uplift must hold across **multiple distinct models** (the thesis says "arbitrary models"), not a single provider — and must beat the cipher/noise baselines that currently match the conlang under weak metrics.
 
-> **Bottom line.** *The affordance is demonstrated (qualified); the uplift is staged and unproven. The honest headline is: "GLOSSOPETRAE provably manufactures the substrate — runnable novel languages, characterized covert channels, a sound benchmark — but whether any model converts that substrate into a real, transferable capability uplift awaits a single missing input: an authorized real-model run on benign probes."*
+> **Bottom line.** *The affordance is demonstrated (qualified); the uplift is staged and unproven. The honest headline is: "HVRCRVX_LINGO provably manufactures the substrate — runnable novel languages, characterized covert channels, a sound benchmark — but whether any model converts that substrate into a real, transferable capability uplift awaits a single missing input: an authorized real-model run on benign probes."*
 
 ---
 

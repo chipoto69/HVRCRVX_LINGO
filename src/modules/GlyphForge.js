@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - GlyphForge Module
+ * HVRCRVX_LINGO - GlyphForge Module
  *
  * Procedural SVG glyph generation for generated writing systems.
  * Turns a ScriptGenerator specification (script type, aesthetic, direction,
@@ -171,7 +171,7 @@ function subBox(box, z) {
 
 export class GlyphForge {
   /**
-   * @param {object} language - A fully generated GLOSSOPETRAE language object.
+   * @param {object} language - A fully generated HVRCRVX_LINGO language object.
    *   Requires language.seed, language.phonology and language.script.
    *   All glyph generation happens up front, deterministically.
    */

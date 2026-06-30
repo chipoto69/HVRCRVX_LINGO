@@ -1,12 +1,12 @@
 /**
- * GLOSSOPETRAE Test Script
+ * HVRCRVX_LINGO Test Script
  * Run with: node test.mjs
  */
 
 import { Glossopetrae, PRESETS } from './src/Glossopetrae.js';
 
 console.log('========================================');
-console.log('   GLOSSOPETRAE v3.0 - Test Suite');
+console.log('   HVRCRVX_LINGO v3.0 - Test Suite');
 console.log('========================================\n');
 
 // Test 1: Basic generation

@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE GlyphForge Test Script
+ * HVRCRVX_LINGO GlyphForge Test Script
  * Run with: node test-glyphs.mjs
  *
  * Verifies the procedural glyph generator:
@@ -19,7 +19,7 @@ import { Glossopetrae } from './src/Glossopetrae.js';
 import { GlyphForge } from './src/modules/GlyphForge.js';
 
 console.log('========================================');
-console.log('   GLOSSOPETRAE - GlyphForge Tests');
+console.log('   HVRCRVX_LINGO - GlyphForge Tests');
 console.log('========================================\n');
 
 let passed = 0;
@@ -223,7 +223,7 @@ console.log('\nWriting glyph-preview.html for visual inspection...');
     </section>`;
   }
   const html = `<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>GLOSSOPETRAE - GlyphForge Preview</title>
+<html lang="en"><head><meta charset="utf-8"><title>HVRCRVX_LINGO - GlyphForge Preview</title>
 <style>
   body { background: #0e0e12; color: #e8e0cf; font-family: Georgia, serif; margin: 2rem auto; max-width: 960px; }
   h1 { letter-spacing: 0.15em; font-variant: small-caps; }
@@ -239,7 +239,7 @@ console.log('\nWriting glyph-preview.html for visual inspection...');
             color: #f0e6c8; overflow-x: auto; }
   code { color: #c9b97a; }
 </style></head><body>
-<h1>GLOSSOPETRAE — GlyphForge Preview</h1>
+<h1>HVRCRVX_LINGO — GlyphForge Preview</h1>
 <p>Three generated languages, their full glyph tables, and a rendered sample sentence.
    Glyphs use <code>currentColor</code> and tint with the page theme.</p>
 ${sections}

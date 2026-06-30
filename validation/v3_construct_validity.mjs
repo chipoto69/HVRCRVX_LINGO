@@ -1,5 +1,5 @@
 /**
- * v3_construct_validity.mjs — Adversarial validation of GLOSSOPETRAE-BENCH's
+ * v3_construct_validity.mjs — Adversarial validation of HVRCRVX_LINGO-BENCH's
  * CORE SCIENTIFIC CLAIMS:
  *   (a) contamination-free  -> cross-seed lexeme/keyword disjointness at scale
  *   (b) measures spec-ACQUISITION not English priors -> no-spec floor vs oracle ceiling
@@ -12,7 +12,7 @@
 
 import { Glossopetrae } from '../src/Glossopetrae.js';
 import { CodeForge } from '../src/modules/CodeForge.js';
-import { buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 
 const log = (...a) => console.log(...a);
 const pct = (x) => (x * 100).toFixed(1) + '%';

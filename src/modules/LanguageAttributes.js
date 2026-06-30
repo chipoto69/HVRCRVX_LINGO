@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Language Attributes Module v2.0
+ * HVRCRVX_LINGO - Language Attributes Module v2.0
  *
  * Enhanced with cutting-edge 2025-2026 AI security research:
  *

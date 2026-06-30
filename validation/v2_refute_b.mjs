@@ -3,7 +3,7 @@
  * to avoid the per-process language-gen GC blowup. Run each section, print, exit.
  * Pass a section arg: node validation/v2_refute_b.mjs <2|3|4|5>
  */
-import { buildTasks } from '../bench/glossopetrae-bench.mjs';
+import { buildTasks } from '../bench/hvrcrvx-lingo-bench.mjs';
 import { Glossopetrae } from '../src/Glossopetrae.js';
 import { CodeForge } from '../src/modules/CodeForge.js';
 import { conlang as conlangChannel } from '../redteam/channels.mjs';

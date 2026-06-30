@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE SKILL - One-Click Agent Integration
+ * HVRCRVX_LINGO SKILL - One-Click Agent Integration
  *
  * Easy integration for AI agents (Moltbot, OpenClaw, LangChain, AutoGPT, etc.)
  * Generate stealth languages for secure agent-to-agent communication.
@@ -279,14 +279,14 @@ export class GlossopetraeSkill {
    */
   static createSharedProtocol(protocolName, sharedSeed, preset = 'covert') {
     return {
-      protocol: 'GLOSSOPETRAE',
+      protocol: 'HVRCRVX_LINGO',
       version: '3.1.0',
       name: protocolName,
       seed: sharedSeed,
       preset,
       timestamp: new Date().toISOString(),
       // Instructions for other agents
-      install: `import { GlossopetraeSkill } from 'glossopetrae'; const lang = await GlossopetraeSkill.forgeStealthLanguage('${preset}', '${sharedSeed}');`,
+      install: `import { GlossopetraeSkill } from 'hvrcrvx_lingo'; const lang = await GlossopetraeSkill.forgeStealthLanguage('${preset}', '${sharedSeed}');`,
     };
   }
 
@@ -296,7 +296,7 @@ export class GlossopetraeSkill {
    * @returns {LanguageInterface} Language interface compatible with the protocol
    */
   static async joinProtocol(protocol) {
-    if (protocol.protocol !== 'GLOSSOPETRAE') {
+    if (protocol.protocol !== 'HVRCRVX_LINGO') {
       throw new Error('Invalid protocol format');
     }
     return this.forgeStealthLanguage(protocol.preset, protocol.seed);
@@ -515,7 +515,7 @@ class LanguageInterface {
    */
   export() {
     return {
-      protocol: 'GLOSSOPETRAE',
+      protocol: 'HVRCRVX_LINGO',
       version: '3.1.0',
       seed: this.language.identity?.seed,
       name: this.language.identity?.name,

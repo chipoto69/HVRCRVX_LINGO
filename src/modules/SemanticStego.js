@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Semantic Steganography Module
+ * HVRCRVX_LINGO - Semantic Steganography Module
  *
  * Implements cutting-edge linguistic steganography techniques based on
  * 2025 research:

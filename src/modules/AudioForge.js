@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - AudioForge Module
+ * HVRCRVX_LINGO - AudioForge Module
  *
  * Klatt-style cascade formant synthesizer that pronounces words of a
  * generated language. Pure DSP: produces mono Float32Array PCM at
@@ -169,7 +169,7 @@ const IPA_VOWEL = new Set(getAllVowels().map((v) => v.ipa));
 
 export class AudioForge {
   /**
-   * @param {object} language - a generated GLOSSOPETRAE language object
+   * @param {object} language - a generated HVRCRVX_LINGO language object
    *   (uses language.phonology.{consonants,vowels}, language.prosody,
    *   language.seed). A partial object works: missing pieces fall back to
    *   the full canonical inventory and neutral prosody.

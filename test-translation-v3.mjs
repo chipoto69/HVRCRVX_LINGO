@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Translation Engine v3 Tests
+ * HVRCRVX_LINGO - Translation Engine v3 Tests
  * Tests: contractions, possessives, numbers, special characters,
  * paragraphs, abbreviations, and edge cases
  */

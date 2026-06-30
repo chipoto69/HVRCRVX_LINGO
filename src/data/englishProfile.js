@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - English Reference Profile
+ * HVRCRVX_LINGO - English Reference Profile
  *
  * A comprehensive linguistic profile of English used to calculate
  * divergence for generated languages. Based on typological research.

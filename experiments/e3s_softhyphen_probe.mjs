@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — e3s_softhyphen_probe.mjs
+ * HVRCRVX_LINGO — e3s_softhyphen_probe.mjs
  *
  * Quick diagnostic: does GPT-5-nano preserve or strip soft-hyphen (U+00AD)?
  * From fingerprinting, Haiku SEES it and Gemini SEES it.

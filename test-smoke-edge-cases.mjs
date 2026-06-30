@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE Smoke Test — Translate + Code Lab edge cases
+ * HVRCRVX_LINGO Smoke Test — Translate + Code Lab edge cases
  *
  * Tests the Translation Engine and CodeForge/CodeSkin with real-world
  * edge cases across 3 seeds for cross-seed stability.

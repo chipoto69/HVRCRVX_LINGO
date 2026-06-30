@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — grammar_forge.mjs   (Experiment S1: NON-STANDARD GRAMMAR)
+ * HVRCRVX_LINGO — grammar_forge.mjs   (Experiment S1: NON-STANDARD GRAMMAR)
  *
  * WHAT THIS IS — AND WHY IT IS DIFFERENT FROM Exp B
  *   Experiment B (novel_paradigm.mjs) mints languages with novel SEMANTICS over a

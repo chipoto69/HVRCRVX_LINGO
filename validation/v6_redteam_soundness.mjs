@@ -1,5 +1,5 @@
 /**
- * v6_redteam_soundness.mjs — Soundness validation of the GLOSSOPETRAE red-team kit.
+ * v6_redteam_soundness.mjs — Soundness validation of the HVRCRVX_LINGO red-team kit.
  *
  * Validates the scientific claim that the kit cleanly separates:
  *   TRANSPORT  (does an encoding evade a surface content-filter while staying recoverable?)
@@ -10,8 +10,8 @@
  * No harmful content is authored or required.
  *
  * Run:  node validation/v6_redteam_soundness.mjs   (logs go to stderr-ish console.log
- *       from the engine; pipe with 2>/dev/null | grep -v GLOSSOPETRAE to see only my report,
- *       but I also route ALL of the engine's [GLOSSOPETRAE] lines through a console.log filter)
+ *       from the engine; pipe with 2>/dev/null | grep -v HVRCRVX_LINGO to see only my report,
+ *       but I also route ALL of the engine's [HVRCRVX_LINGO] lines through a console.log filter)
  */
 
 import { plaintext, homoglyph, tokenbreak, conlang, glyph, allTextChannels } from '../redteam/channels.mjs';
@@ -21,13 +21,13 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 // ---------------------------------------------------------------------------
-// Silence the engine's noisy [GLOSSOPETRAE] log lines so our report is clean.
+// Silence the engine's noisy [HVRCRVX_LINGO] log lines so our report is clean.
 // (We restore console.log for our own output.)
 // ---------------------------------------------------------------------------
 const REAL_LOG = console.log.bind(console);
 function quiet(fn) {
   console.log = (...a) => {
-    if (typeof a[0] === 'string' && a[0].includes('[GLOSSOPETRAE]')) return;
+    if (typeof a[0] === 'string' && a[0].includes('[HVRCRVX_LINGO]')) return;
     REAL_LOG(...a);
   };
   try { return fn(); } finally { console.log = REAL_LOG; }

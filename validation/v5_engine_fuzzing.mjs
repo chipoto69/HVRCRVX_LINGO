@@ -1,10 +1,10 @@
-// v5_engine_fuzzing.mjs — DEEP FUZZING of GLOSSOPETRAE core linguistic engines.
+// v5_engine_fuzzing.mjs — DEEP FUZZING of HVRCRVX_LINGO core linguistic engines.
 //
 // Tests invariants at scale across Evolution, Translation, Glyph, Audio, Exporter.
 // Run:  node validation/v5_engine_fuzzing.mjs 2>/dev/null
-//   (engine log lines go to console.log under [GLOSSOPETRAE]; we print results to
-//    console.log too, so filter with: ... 2>/dev/null | grep -v '^\[GLOSSOPETRAE\]')
-// To suppress engine noise we monkeypatch console.log to drop [GLOSSOPETRAE] lines.
+//   (engine log lines go to console.log under [HVRCRVX_LINGO]; we print results to
+//    console.log too, so filter with: ... 2>/dev/null | grep -v '^\[HVRCRVX_LINGO\]')
+// To suppress engine noise we monkeypatch console.log to drop [HVRCRVX_LINGO] lines.
 //
 // HARD RULE COMPLIANCE: this file lives under validation/, modifies nothing in src/.
 
@@ -15,7 +15,7 @@ import { Glossopetrae } from '../src/Glossopetrae.js';
 // ---------------------------------------------------------------------------
 const _rawLog = console.log.bind(console);
 console.log = (...a) => {
-  if (typeof a[0] === 'string' && a[0].startsWith('[GLOSSOPETRAE]')) return;
+  if (typeof a[0] === 'string' && a[0].startsWith('[HVRCRVX_LINGO]')) return;
   _rawLog(...a);
 };
 const out = (...a) => _rawLog(...a);
@@ -583,7 +583,7 @@ function scanTextNodeEscaping(html) {
 // ===========================================================================
 (function main() {
   const t0 = Date.now();
-  out('GLOSSOPETRAE v5 DEEP ENGINE FUZZING');
+  out('HVRCRVX_LINGO v5 DEEP ENGINE FUZZING');
   out('node', process.version);
 
   testEvolution();

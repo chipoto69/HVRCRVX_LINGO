@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Advanced Steganography Engine
+ * HVRCRVX_LINGO - Advanced Steganography Engine
  *
  * A cutting-edge linguistic steganography system that hides binary payloads
  * within natural-looking conlang text using multiple covert channels.

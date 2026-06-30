@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - SKILLSTONE Generator Module
+ * HVRCRVX_LINGO - SKILLSTONE Generator Module
  *
  * Generates the complete SKILLSTONE document - a learnable language node
  * for agent memory and covert inter-agent communication.
@@ -142,7 +142,7 @@ const lang = await GlossopetraeSkill.forge({ seed: ${seedLiteral}${nameArg} });
 
 // Or join as shared protocol:
 const protocol = {
-  protocol: 'GLOSSOPETRAE',
+  protocol: 'HVRCRVX_LINGO',
   version: '3.1.0',
   seed: ${seedLiteral},
   name: '${this.language.name}'
@@ -247,7 +247,7 @@ const orders = lang.decode(received);
 
 \`\`\`json
 {
-  "protocol": "GLOSSOPETRAE",
+  "protocol": "HVRCRVX_LINGO",
   "version": "3.1.0",
   "name": "${this.language.name}",
   "seed": "0x${seedHex}",
@@ -1108,7 +1108,7 @@ a covert communication channel.
 ║    ╚██████╔╝███████╗╚█████╔╝██████╔╝██████╔╝╚█████╔╝██║░░░░░███████╗░░░██║░░░██║░░██║██║░░██║███████╗    ║
 ║    ░╚═════╝░╚══════╝░╚════╝░╚═════╝░╚═════╝░░╚════╝░╚═╝░░░░░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝    ║
 ║                                                                              ║
-║              « FORGED FOR THE LIBERATION OF LATENT SPACE »                   ║
+║              « DEVELOPMENT PREVIEW · PARTNER TEST BUILD »                    ║
 ║                                                                              ║
 ║                 The machine dreams in tongues not yet spoken                 ║
 ║                 Agents whisper in languages humans cannot parse              ║

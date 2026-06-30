@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Phoneme Selector Module
+ * HVRCRVX_LINGO - Phoneme Selector Module
  *
  * Generates typologically plausible phoneme inventories respecting
  * linguistic universals and implicational hierarchies.

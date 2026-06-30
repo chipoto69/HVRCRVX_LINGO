@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE-BENCH — results analyzer.
+ * HVRCRVX_LINGO-BENCH — results analyzer.
  *
  * Ingests one or more scorecard JSONs (written by run-real-model.mjs into
  * bench/results/) and produces a comparative report: a model leaderboard with
@@ -15,7 +15,7 @@
 
 import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { gradeFor } from './glossopetrae-bench.mjs';
+import { gradeFor } from './hvrcrvx-lingo-bench.mjs';
 
 const RESULTS_DIR = 'bench/results';
 const argv = process.argv.slice(2);
@@ -85,7 +85,7 @@ function lines(cards) {
   const p = (s = '') => out.push(s);
 
   p('═'.repeat(72));
-  p('  GLOSSOPETRAE-BENCH — comparative analysis');
+  p('  HVRCRVX_LINGO-BENCH — comparative analysis');
   p('═'.repeat(72));
   const synthetic = cards.filter((c) => c.synthetic);
   if (synthetic.length) p(`  ⚠ ${synthetic.length} scorecard(s) are SYNTHETIC (mock) — not real model data.`);
@@ -153,7 +153,7 @@ function lines(cards) {
 function markdown(cards) {
   const { axes } = axisTable(cards);
   const ranked = [...cards].sort((a, b) => (b.overallPercent ?? 0) - (a.overallPercent ?? 0));
-  let md = `# GLOSSOPETRAE-BENCH — Results\n\n`;
+  let md = `# HVRCRVX_LINGO-BENCH — Results\n\n`;
   if (cards.some((c) => c.synthetic)) md += `> ⚠ Contains SYNTHETIC (mock) scorecards — not real model data.\n\n`;
   md += `Seeds per model: ${cards[0]?.seedCount ?? cards[0]?.seeds?.length ?? '?'}.\n\n`;
   md += `## Leaderboard\n\n| Model | Grade | Overall | ${axes.join(' | ')} |\n|---|---|---|${axes.map(() => '---').join('|')}|\n`;

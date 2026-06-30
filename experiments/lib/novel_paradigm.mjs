@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — novel_paradigm.mjs  (Experiment B core)
+ * HVRCRVX_LINGO — novel_paradigm.mjs  (Experiment B core)
  *
  * WHAT THIS IS
  *   A generator of small expression LANGUAGES whose SEMANTICS are deliberately

@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE - Text Library Module
+ * HVRCRVX_LINGO - Text Library Module
  *
  * Canonical conlang showcase texts. Every serious constructed language
  * is presented through a small set of standard texts that the conlang
@@ -14,7 +14,7 @@
  *   udhr1      - Universal Declaration of Human Rights, Article 1
  *   schleicher - Schleicher's Fable (The Sheep and the Horses)
  *   colorless  - Famous linguistically-significant sentences
- *   pliny      - Flavor text from/about Pliny the Elder
+ *   maxims     - Classical maxims and compact aphorisms
  *
  * English source sentences are deliberately SIMPLIFIED toward the
  * ~1358 concepts available in src/data/semantics.js so that as much
@@ -111,11 +111,11 @@ const CANONICAL_TEXTS = [
     ],
   },
   {
-    id: 'pliny',
-    title: 'Words of Pliny the Elder',
+    id: 'maxims',
+    title: 'Classical Maxims',
     category: 'flavor',
     note:
-      'Three sayings from or about Pliny the Elder. "True glory consists in ' +
+      'Three compact maxims used as short-form translation probes. "True glory consists in ' +
       'deeds" is rendered as "true glory comes from what we do".',
     sentences: [
       'Fortune favors the brave.',
@@ -127,7 +127,7 @@ const CANONICAL_TEXTS = [
 
 export class TextLibrary {
   /**
-   * @param {object} language - A generated GLOSSOPETRAE language object.
+   * @param {object} language - A generated HVRCRVX_LINGO language object.
    *   Must expose language.translationEngine.translateToConlang(english).
    */
   constructor(language) {
@@ -166,7 +166,7 @@ export class TextLibrary {
   /**
    * Render one canonical text into the language.
    *
-   * @param {string} id - One of: babel, northwind, udhr1, schleicher, colorless, pliny.
+   * @param {string} id - One of: babel, northwind, udhr1, schleicher, colorless, maxims.
    * @returns {object|null} {
    *   id, title, category,
    *   english: [...source sentences],

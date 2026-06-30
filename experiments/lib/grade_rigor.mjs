@@ -1,5 +1,5 @@
 /**
- * GLOSSOPETRAE — grade_rigor.mjs
+ * HVRCRVX_LINGO — grade_rigor.mjs
  *
  * Grader that BOTH fixes and MEASURES the "helpful-fix" artifact (paper §5.6):
  * at the readable level (L0) frontier models sometimes write a program in
