@@ -1,0 +1,70 @@
+{
+  "generated": "2026-07-01T00:15:38Z",
+  "milestone": "M8",
+  "scope": "Local-source capture for privacy/security/redaction review; no secrets, credentials, or private stores were read.",
+  "sources": [
+    {
+      "id": "M8-S001",
+      "kind": "local-source",
+      "path": "src/skill/GlossopetraeSkill.js",
+      "evidence": [
+        "lines 1-35: skill quickstart and comments show stealth and steganography examples, including hidden-payload quick methods.",
+        "lines 197-227: forgeStealthLanguage constructs stealth language interfaces from stealth presets.",
+        "lines 531-637: LanguageInterface exposes stegoEncode, stegoDecode, stegoCapacity, getStegoStats, hide, and reveal."
+      ]
+    },
+    {
+      "id": "M8-S002",
+      "kind": "local-source",
+      "path": "src/Glossopetrae.js",
+      "evidence": [
+        "lines 453-467: static stealth() factory is optimized for covert communication using homoglyphs.",
+        "lines 546-575: tokenbreak and stego factory methods are present.",
+        "lines 577-623: phantom, glitch, and ultimateEvasion factories combine evasion-oriented attributes."
+      ]
+    },
+    {
+      "id": "M8-S003",
+      "kind": "local-source",
+      "path": "src/modules/SteganographyEngine.js",
+      "evidence": [
+        "lines 1-31: module is explicitly a linguistic steganography engine with hidden payload frames and multiple covert channels.",
+        "lines 59-77: homoglyph and zero-width Unicode carriers are defined as channels.",
+        "lines 38-47 and 179-187: frame/error-correction constants and payload size checks show this is a payload-carrying subsystem, not a benign memory compressor."
+      ]
+    },
+    {
+      "id": "M8-S004",
+      "kind": "local-doc",
+      "path": "AGENT_QUICKSTART.md; src/modules/StoneGenerator.js",
+      "evidence": [
+        "AGENT_QUICKSTART.md:13-24: primary quickstart is stealth communication.",
+        "AGENT_QUICKSTART.md:43-57 and 86-109: docs emphasize stealth presets and shared protocols.",
+        "AGENT_QUICKSTART.md:134-176: integration examples expose encode/decode-style stealth tooling to agents.",
+        "src/modules/StoneGenerator.js:175-199 and 209-269: generated skillstone sections include agent memory directives and covert protocol sharing text."
+      ]
+    },
+    {
+      "id": "M8-S005",
+      "kind": "autoresearch-report",
+      "path": "autoresearch/findings/M7-integration-spec.md",
+      "evidence": [
+        "lines 33-70: M7 recommends repo-local MCP with tool include-list, resources/prompts disabled, no env secrets, and sampling disabled.",
+        "lines 110-123: audit_context must check redaction recall, forbidden surfaces, and prompt-injection hygiene.",
+        "lines 232-241: M7 security boundaries require no secrets, root confinement, synthetic-first eval, no remote calls by default, untrusted memory treatment, no production covert-channel surface, disabled sampling, and disabled resources/prompts.",
+        "lines 257-270: M7 handoff explicitly requires path, secret, forbidden-surface, prompt-injection, and delete/forget tests."
+      ]
+    },
+    {
+      "id": "M8-S006",
+      "kind": "autoresearch-report",
+      "path": "autoresearch/findings/M4-memory-provider-matrix.md; autoresearch/findings/M5-prototype-plan.md; autoresearch/findings/M6-eval-results.md",
+      "evidence": [
+        "M4 lines 105-111: provider rules require synthetic/redacted fixtures, no credential-store material, untrusted-data treatment, and deletion/forget stories.",
+        "M5 lines 123-130 and 184-193: P0 safety contracts require no secret files, fake canaries, source spans, no remote clients by default, and no covert-channel production memory.",
+        "M6 lines 17-28 and 39-48: redaction recall is measured; raw/truncate/tokencompressor fail redaction while audit-aware baselines can pass.",
+        "M6 lines 50-59: future integration must preserve exact token provenance and separate execution-equivalence from fact recall."
+      ]
+    }
+  ]
+}

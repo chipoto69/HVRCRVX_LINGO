@@ -27,6 +27,7 @@ npm-debug.log*
 .env.local
 .env.*.local
 *.env
+.herenow/
 
 # Test coverage
 coverage/

@@ -49,11 +49,39 @@
       "name": "no-network-prototype-implementation-plan",
       "status": "completed",
       "summary": "Completed M5 prototype plan: P0 no-network TokenCounter, MemoryFrame parser/emitter/audit/rehydrator, local JSONL provider baseline, seeded S1/S2/S4 runner, graders, scorecard, and acceptance tests."
+    },
+    {
+      "id": "D008",
+      "ts": "2026-06-30T20:02:20Z",
+      "name": "controlled-evaluation-pilot-exact-token-scorecard",
+      "status": "completed",
+      "summary": "Completed M6 controlled pilot with exact gpt-tokenizer/gpt-4o counts across S1/S2/S4 fixtures and raw/truncate/summary/extractive/TokenCompressor/JSON/MemoryFrame/local-provider baselines."
+    },
+    {
+      "id": "D009",
+      "ts": "2026-06-30T22:07:17Z",
+      "name": "mcp-tool-plugin-integration-boundary",
+      "status": "completed",
+      "summary": "Completed M7 integration spec: repo-local allowlisted MCP server first, canonical native ESM API, six benign memory-compression tools, MemoryArtifact schema, no-secret/no-covert security boundaries, and M8 safety handoff."
+    },
+    {
+      "id": "D010",
+      "ts": "2026-07-01T00:15:38Z",
+      "name": "privacy-redaction-path-delete-safety-review",
+      "status": "completed",
+      "summary": "Completed M8 safety review: separate safe memory subsystem, path confinement and secret-path denial, planted canary redaction gates, forbidden stealth/stego surface scans, prompt-injection handling, and delete/forget release gates."
+    },
+    {
+      "id": "D011",
+      "ts": "2026-07-01T02:24:22Z",
+      "name": "final-synthesis-auditability-first-build-plan",
+      "status": "completed",
+      "summary": "Completed M9 final synthesis: recommended a no-network auditability-first memory-compression subsystem, reframed MemoryFrame as source-span/safety infrastructure rather than raw token-ratio winner, and produced P0-P4 build/research roadmap."
     }
   ],
   "next_direction_candidates": [
-    "Controlled evaluation pilot for MemoryFrame vs raw/summary/retrieval baselines",
-    "MCP/plugin API design after prototype metrics stabilize",
-    "Privacy/redaction hardening with planted canary fixtures"
+    "Start P0 implementation with TokenCounter and safety gates",
+    "Expand M6 pilot into reusable benchmark runner with additional seeds",
+    "Optimize MemoryFrame source-span overhead against compact JSON and extractive baselines"
   ]
 }

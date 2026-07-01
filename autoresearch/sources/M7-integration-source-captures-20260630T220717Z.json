@@ -1,0 +1,73 @@
+{
+  "generated": "2026-06-30T22:07:17Z",
+  "milestone": "M7",
+  "scope": "Local-source capture for MCP/tool/plugin integration spec; no secrets or credentials read.",
+  "sources": [
+    {
+      "id": "M7-S001",
+      "kind": "local-doc",
+      "path": "/Users/filipdam/.hermes/hermes-agent/website/docs/user-guide/features/mcp.md",
+      "evidence": [
+        "lines 9-19: MCP connects Hermes to external stdio/HTTP tool servers, discovers/registers tools, and supports per-server filtering/resources/prompts.",
+        "lines 117-135: catalog trust model requires reading manifests because install/bootstrap/transport commands execute upstream code.",
+        "lines 175-210: Hermes supports both local stdio and remote HTTP MCP servers.",
+        "lines 223-246: OAuth tokens are cached under ~/.hermes/mcp-tokens and config reload has OAuth timing pitfalls."
+      ]
+    },
+    {
+      "id": "M7-S002",
+      "kind": "local-doc",
+      "path": "/Users/filipdam/.hermes/hermes-agent/website/docs/guides/use-mcp-with-hermes.md",
+      "evidence": [
+        "lines 13-24: use MCP for clean RPC access to existing/local/remote systems; avoid it when the server exposes a huge dangerous surface or a native tool is safer.",
+        "lines 93-110: whitelist with tools.include as the best default for sensitive systems.",
+        "lines 455-479: safe usage recommends allowlists, disabling unused utilities, and narrow server scopes.",
+        "lines 267-316: repo-local Open Scaffold pattern keeps durable work records local/read-oriented and gates writes separately."
+      ]
+    },
+    {
+      "id": "M7-S003",
+      "kind": "local-doc",
+      "path": "/Users/filipdam/.hermes/hermes-agent/website/docs/reference/mcp-config-reference.md",
+      "evidence": [
+        "lines 15-42: root mcp_servers config shape covers command/args/env or url/headers plus tools include/exclude/resources/prompts.",
+        "lines 64-73: tools policy supports include, exclude, resources, and prompts controls.",
+        "lines 244-273: registered names use mcp_<server>_<tool>; include/exclude filters use original MCP tool names, not sanitized names.",
+        "lines 275-291: HTTP OAuth uses PKCE and persists tokens under ~/.hermes/mcp-tokens/<server>.json."
+      ]
+    },
+    {
+      "id": "M7-S004",
+      "kind": "local-doc",
+      "path": "/Users/filipdam/.hermes/hermes-agent/skills/autonomous-ai-agents/hermes-agent/references/native-mcp.md",
+      "evidence": [
+        "lines 41-46: on startup Hermes connects, discovers tools, registers mcp_<server>_* names, and injects them into platform toolsets.",
+        "lines 96-111: discovery reads ~/.hermes/config.yaml, list_tools() discovers tools, and hyphens/dots are sanitized in registered names.",
+        "lines 164-171: stdio MCP subprocesses inherit only a filtered baseline environment; secrets are excluded unless explicitly added via env.",
+        "lines 312-337: sampling/createMessage is enabled by default and should be disabled for untrusted servers."
+      ]
+    },
+    {
+      "id": "M7-S005",
+      "kind": "local-source",
+      "path": "package.json; src/Glossopetrae.js; src/skill/GlossopetraeSkill.js; AGENT_QUICKSTART.md",
+      "evidence": [
+        "package.json:1-9: repo is private ESM and currently exposes npm test plus autoresearch:validate scripts.",
+        "src/Glossopetrae.js:1046-1047: TokenCompressor is re-exported for direct integrations.",
+        "src/skill/GlossopetraeSkill.js:175-316: GlossopetraeSkill exposes forge/stealth/dead-language/protocol methods.",
+        "src/skill/GlossopetraeSkill.js:531-637 and AGENT_QUICKSTART.md:13-24: current skill surface includes steganography/covert examples, so M7 must exclude those from production memory-compression tools."
+      ]
+    },
+    {
+      "id": "M7-S006",
+      "kind": "autoresearch-report",
+      "path": "autoresearch/findings/M2-tokenizer-plan.md; autoresearch/findings/M4-memory-provider-matrix.md; autoresearch/findings/M6-eval-results.md",
+      "evidence": [
+        "M2-tokenizer-plan.md:155-184: TokenCountResult schema requires input_tokens, provider/model/source/confidence/mode, and provenance rules.",
+        "M4-memory-provider-matrix.md:33-48: MemorySubstrate interface and MemoryHit source-span/provenance requirements.",
+        "M6-eval-results.md:11-13: pilot used no secrets/private files and exact gpt-tokenizer/gpt-4o counts.",
+        "M6-eval-results.md:50-59: future integration must preserve exact token provenance and separate execution-equivalence from fact recall."
+      ]
+    }
+  ]
+}
